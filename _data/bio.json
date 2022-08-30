@@ -1,0 +1,59 @@
+{
+  "basics": {
+    "name": "Rob Godfrey",
+    "label": "Student",
+    "picture": "",
+    "email": "godfrey7@hawaii.edu",
+    "phone": "509-860-6053",
+    "website": "https://robertgodfrey.github.io",
+    "summary": "I am a studying for a Bachelor of Science degree in Computer Science at the University of Hawaii. I expect to graduate in 2024.",
+    "location": { "address": "", "postalCode": "96812", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "robertgodfrey", "url": "https://github.com/robertgodfrey" },
+      { "network": "linkedin", "username": "robgodfrey", "url": "https://www.linkedin.com/in/bob-godfrey" }
+    ]
+  },
+  "interests": [
+    { "name": "Application Development" },
+    { "name": "Cryptography" },
+    { "name": "Quantum Computing" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": ["Java", "Javascript", "PHP", "C", "C++", "Python", "Swift", "Perl" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "MacOS", "Windows", "Ubuntu", "Git/GitHub", "Android Studio", "Xcode", "TI LaunchPad" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science (expected graduation: 2024)",
+      "studyType": "B.S.",
+      "startDate": "2021",
+      "endDate": "Present",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "United States Army",
+      "position": "Soldier",
+      "startDate": "2011-09",
+      "endDate": "2021-09",
+      "summary": "",
+      "highlights": [
+        "Served in a variety of roles and deployed to several locations around the world, with a concentration in Asia."
+      ]
+    }
+  ],  
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}
