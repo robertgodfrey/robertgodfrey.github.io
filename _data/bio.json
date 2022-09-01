@@ -2,11 +2,10 @@
   "basics": {
     "name": "Rob Godfrey",
     "label": "Student",
-    "picture": "",
+    "picture": "https://i.imgur.com/qBHD0o3.png",
     "email": "godfrey7@hawaii.edu",
-    "phone": "509-860-6053",
     "website": "https://robertgodfrey.github.io",
-    "summary": "I am a studying for a Bachelor of Science degree in Computer Science at the University of Hawaii. I expect to graduate in 2024.",
+    "summary": "I am a computer science student at the University of Hawaii at Manoa. I expect to graduate in 2024.",
     "location": { "address": "", "postalCode": "96812", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "robertgodfrey", "url": "https://github.com/robertgodfrey" },
@@ -31,8 +30,8 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected graduation: 2024)",
-      "studyType": "B.S.",
+      "area": "Bachelor of Arts in Korean <br>(expected graduation: 2024)",
+      "studyType": "Bachelor of Science in Computer Science",
       "startDate": "2021",
       "endDate": "Present",
       "courses": [
@@ -47,7 +46,7 @@
       "endDate": "2021-09",
       "summary": "",
       "highlights": [
-        "Served in a variety of roles and deployed to several locations around the world, with a concentration in Asia."
+        "Served in a variety of roles and deployed to several locations around the world with a concentration in Asia."
       ]
     }
   ],  
