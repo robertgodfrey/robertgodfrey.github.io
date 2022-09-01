@@ -9,7 +9,7 @@ labels:
   - JavaScript
 ---
 
-<img width="300px" class="ui medium right floated rounded image" src="../img/js-kotw.png">
+<img width="300px" align="right" src="../img/js-kotw.png">
 
 ## JavaScript Runs The World
 
