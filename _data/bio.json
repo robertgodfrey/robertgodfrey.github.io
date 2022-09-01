@@ -5,11 +5,11 @@
     "picture": "https://i.imgur.com/qBHD0o3.png",
     "email": "godfrey7@hawaii.edu",
     "website": "https://robertgodfrey.github.io",
-    "summary": "I am a computer science student at the University of Hawaii at Manoa. I expect to graduate in 2024.",
+    "summary": "I am a computer science student at the University of Hawaii at Manoa. I expect to graduate in 2024 and plan on pursuing a career as a software engineer.",
     "location": { "address": "", "postalCode": "96812", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "robertgodfrey", "url": "https://github.com/robertgodfrey" },
-      { "network": "linkedin", "username": "robgodfrey", "url": "https://www.linkedin.com/in/bob-godfrey" }
+      { "network": "linkedin", "username": "bob-godfrey", "url": "https://www.linkedin.com/in/bob-godfrey" }
     ]
   },
   "interests": [
@@ -24,13 +24,13 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Windows", "Ubuntu", "Git/GitHub", "Android Studio", "Xcode", "TI LaunchPad" ]
+      "keywords": [ "Windows", "MacOS", "Ubuntu", "Git/GitHub", "Android Studio", "Xcode", "TI LaunchPad" ]
     }
   ],
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Bachelor of Arts in Korean <br>(expected graduation: 2024)",
+      "area": "Bachelor of Arts in Korean <br>Expected Graduation: 2024",
       "studyType": "Bachelor of Science in Computer Science",
       "startDate": "2021",
       "endDate": "Present",
