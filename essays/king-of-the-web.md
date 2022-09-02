@@ -9,7 +9,7 @@ labels:
   - JavaScript
 ---
 
-<img width="300px" align="right" src="../img/js-kotw.png">
+<img width="300px" class="rounded float-end" src="../img/js-kotw.png">
 
 ## JavaScript Runs The World
 
@@ -25,4 +25,4 @@ I have minimal experience coding with JS - my first exposure to JS was a few sem
 
 ## Athletic Software Engineering
 
-I like the idea of athletic software engineering. Years ago, I used to do Crossfit fairly often and it was always fun to compete against the other people in the gym, against the clock, or even against yourself. I enjoy a challenge and I am looking forward to being tested under pressure. 
+I like the idea of athletic software engineering. Years ago, I used to do Crossfit fairly often and it was always fun to compete against the other people in the gym, against the clock, or even against yourself. I am competive, so I think that the WODs in this course will motivate me to review and practice concepts until I feel confident enough to achieve the prescribed time. I enjoy a challenge and I am looking forward to being tested under pressure. 
