@@ -7,7 +7,7 @@ date: 2020
 published: true
 labels:
   - Python
-summary: "A tool to find alpine adventures. Query a database to find a hike that matches search criteria and keep a log of hikes completed."
+summary: "A tool to find alpine adventures. Allows users to query a database to find a hike that matches specific search criteria and keep a record of hikes completed."
 ---
 
 A <a href="https://en.wikipedia.org/wiki/Summit_register" target="_blank">summit register</a> is a logbook that can be found at the top of many mountain peaks. In these logbooks, visitors record their name and the date of their ascent, along with other optional information such as their hometown and a brief description of the hike.
