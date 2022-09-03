@@ -4,6 +4,7 @@
     "label": "Student",
     "picture": "https://i.imgur.com/qBHD0o3.png",
     "email": "godfrey7@hawaii.edu",
+    "phone": "509-860-6053",
     "website": "https://robertgodfrey.github.io",
     "summary": "I am a computer science student at the University of Hawaii at Manoa. I expect to graduate in 2024 and plan on pursuing a career as a software engineer.",
     "location": { "address": "", "postalCode": "96812", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
@@ -24,17 +25,30 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "MacOS", "Ubuntu", "Git/GitHub", "Android Studio", "Xcode", "TI LaunchPad" ]
+      "keywords": [ "Windows", "MacOS", "Linux", "Git/GitHub", "Android Studio", "Xcode", "Adobe Photoshop", "Adobe Illustrator" ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Bachelor of Arts in Korean <br>Expected Graduation: 2024",
+      "institution": "University of Hawaii at Manoa",
+      "area": "Bachelor of Arts in Korean",
       "studyType": "Bachelor of Science in Computer Science",
-      "startDate": "2021",
+      "startDate": "2022",
       "endDate": "Present",
       "courses": [
+        "Expected Graduation: 2024",
+        "Relevant Coursework: Program Structure, Software Engineering, Algorithms",
+        "Current GPA: 4.0"
+      ]
+    },
+    {
+      "institution": "Windward Community College",
+      "area": "Natural Science: Information and Communications Technology",
+      "studyType": "Associate of Science",
+      "startDate": "2020",
+      "endDate": "2021",
+      "courses": [
+        "GPA: 4.0"
       ]
     }
   ],

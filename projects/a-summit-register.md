@@ -2,11 +2,12 @@
 layout: project
 type: project
 image: img/summit-register/sr-icon.png
-title: "Summit Register"
+title: Summit Register
 date: 2020
 published: true
 labels:
   - Python
+  - SQL
 summary: "A tool to find alpine adventures. Allows users to query a database to find a hike that matches specific search criteria and keep a record of hikes completed."
 ---
 

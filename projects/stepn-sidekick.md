@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/sidekick/sidekick-logo.png
-title: "STEPN Sidekick"
+title: STEPN Sidekick
 date: 2022
 published: true
 labels:

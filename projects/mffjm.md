@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/mffjm/mffjm-icon.png
-title: "MFFJM"
+title: MFFJM
 date: 2020
 published: true
 labels:
