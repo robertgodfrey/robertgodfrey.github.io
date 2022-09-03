@@ -19,7 +19,7 @@ STEPN Sidekick is a mobile application that I developed during summer break 2022
 
 I learned a lot while working on this project. One of my main focuses was creating a user interface that is simple, smooth, and intuitive. This is the first project that I have published and it is my first experience using Swift & Xcode. I also broadened my knowledge of Android Studio with the implementation of features such as user location, audio, foreground services, API calls, advertisements, and in-app purchases. This was the first time I've implemented version control with Git and GitHub. Additionally, I translated the entire app into Korean (with some help).
 
-STEPN Sidekick currently has over 2,500 downloads on the Google Play Store with an average rating of 5.0.
+STEPN Sidekick currently has over 3,000 downloads on the Google Play Store with an average rating of 4.9/5.0.
 <br><br>
 
 <p style="text-align:center;">
