@@ -15,11 +15,11 @@ summary: "A companion application for the move-to-earn game STEPN. Developed nat
 
 <img width="160px" class="rounded float-end" vspace="10px" hspace="10px" src="../img/sidekick/sidekick-logo.png" alt="STEPN Sidekick Logo">
 
-STEPN Sidekick is a mobile application that I developed during summer break 2022. Created as a companion application for the popular <a href="https://time.com/6207679/move-to-earn-apps-crypto-fitness/" target="_blank">move-to-earn</a> game <a href="https://stepn.com" target="_blank">STEPN</a>, STEPN Sidekick helps players optimize their in-game sneakers and gives audible speed and time alerts while the user walks/jogs/runs. The application was originally built natively for Android with Java and is in the process of being rebuilt natively for iOS with Swift/SwiftUI.
+STEPN Sidekick is a mobile application that I developed during summer break 2022. Created as a companion application for the popular <a href="https://time.com/6207679/move-to-earn-apps-crypto-fitness/" target="_blank">move-to-earn</a> game <a href="https://stepn.com" target="_blank">STEPN</a>, STEPN Sidekick helps players optimize their in-game sneakers and gives audible speed and time alerts while the user walks/jogs/runs. The application was originally built natively for Android with Java was entirely rebuilt natively for iOS with Swift/SwiftUI.
 
-I learned a lot while working on this project. One of my main focuses was creating a user interface that is simple, smooth, and intuitive. This is the first project that I have published and it is my first experience using Swift & Xcode. I also broadened my knowledge of Android Studio with the implementation of features such as user location, audio, foreground services, API calls, advertisements, and in-app purchases. This was the first time I've implemented version control with Git and GitHub. Additionally, I translated the entire app into Korean (with some help).
+I learned a lot while working on this project. One of my main focuses was creating a user interface that is simple, smooth, and intuitive. This is the first project that I have published and it is my first experience using Swift & Xcode. I broadened my knowledge of Android Studio with the implementation of features such as user location, audio, foreground services, API calls, advertisements, and in-app purchases. This was also the first time I've implemented version control with Git and GitHub. Additionally, I translated the entire app into Korean (with some help).
 
-STEPN Sidekick currently has over 3,000 downloads on the Google Play Store with an average rating of 4.9/5.0. Version 1.0 (no shoe optimizer) was recently released on the App Store (9/5/22).
+STEPN Sidekick currently has over 3,000 downloads on the Google Play Store with an average rating of 4.9/5.0, and was recently released on the Apple App Store.
 <br><br>
 
 <p style="text-align:center;">
@@ -36,5 +36,5 @@ STEPN Sidekick currently has over 3,000 downloads on the Google Play Store with 
 <p style="text-align:center;">
   <a href="https://github.com/robertgodfrey/STEPN-Sidekick" target="_blank">GitHub Repository (Android)</a>
   &emsp; &emsp;
-  <a href="https://github.com/robertgodfrey/STEPN-Sidekick-iOS" target="_blank">GitHub Repository (iOS)</a>
+  <a href="https://github.com/robertgodfrey/STEPN-Sidekick-iOS" target="_blank">GitHub Repository (iOS)</a> &emsp;
 </p>

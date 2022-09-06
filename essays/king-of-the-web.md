@@ -13,7 +13,7 @@ labels:
 
 ## JavaScript Runs The World
 
-Since its introduction over 25 years ago, JavaScript (JS) has become the king of web development - it's estimated that 98% of websites today use JS to implement client-side webpage behavior. Additionally, in recent years JS has expanded outside of web development and has found other uses, including application development (through platforms such as React Native and Cordova) and embedded systems.  
+Since its introduction over 25 years ago, JavaScript (JS) has become the king of web development - it's estimated that 98% of websites today use JS to implement client-side webpage behavior. Additionally, in recent years JS has found other uses outside web development, including application development (through platforms such as React Native and Cordova) and embedded systems.  
 
 ## Scripting Languages vs. Programming Languages
 
@@ -25,4 +25,4 @@ I have minimal experience coding with JS - my first exposure to JS was a few sem
 
 ## Athletic Software Engineering
 
-I like the idea of athletic software engineering. I am competitive, so I think that the WODs in this course will motivate me to review and practice concepts until I feel confident enough to achieve the prescribed time. Years ago, I used to do Crossfit fairly often and it was always fun to compete against the other people in the gym, against the clock, and against myself. I enjoy a challenge and I am looking forward to being tested under pressure.
+I like the idea of athletic software engineering. I am competitive, so I think that the WODs in this course will motivate me to review and practice concepts until I feel confident enough to achieve the prescribed time. Years ago, I used to do Crossfit (whose WODs are the namesake for this class's WODs) fairly often and it was always fun to compete against the other people in the gym, against the clock, and against myself. I enjoy a challenge and I am looking forward to being tested under pressure.
