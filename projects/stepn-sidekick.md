@@ -15,11 +15,11 @@ summary: "A companion application for the move-to-earn game STEPN. Developed nat
 
 <img width="160px" class="rounded float-end" vspace="10px" hspace="10px" src="../img/sidekick/sidekick-logo.png" alt="STEPN Sidekick Logo">
 
-STEPN Sidekick is a mobile application that I developed during summer break 2022. Created as a companion application for the popular <a href="https://time.com/6207679/move-to-earn-apps-crypto-fitness/" target="_blank">move-to-earn</a> game <a href="https://stepn.com" target="_blank">STEPN</a>, STEPN Sidekick helps players optimize their in-game sneakers and gives audible speed and time alerts while the user walks/jogs/runs. The application was originally built natively for Android with Java was entirely rebuilt for iOS with Swift/SwiftUI.
+STEPN Sidekick is a mobile application that I developed during summer break 2022. Created as a companion application for the popular <a href="https://time.com/6207679/move-to-earn-apps-crypto-fitness/" target="_blank">move-to-earn</a> game <a href="https://stepn.com" target="_blank">STEPN</a>, STEPN Sidekick helps players optimize their in-game sneakers and gives audible speed and time alerts while the user walks/jogs/runs. The application was originally built natively for Android with Java was entirely rebuilt for iOS with Swift/SwiftUI (still a WIP).
 
 I learned a lot while working on this project. One of my main focuses was creating a user interface that is simple, smooth, and intuitive. This is the first project that I have published and it is my first experience using Swift & Xcode. I broadened my knowledge of Android Studio with the implementation of features such as user location, audio, foreground services, API calls, advertisements, and in-app purchases. This was also the first time I've implemented version control with Git and GitHub. Additionally, I translated the entire app into Korean (with some help).
 
-STEPN Sidekick currently has over 3,000 downloads on the Google Play Store with an average rating of 4.9/5.0, and was recently released on the Apple App Store.
+STEPN Sidekick currently has over 4,000 downloads on the Google Play Store with an average rating of 4.9/5.0 stars. A "light" version (no shoe optimizer) was recently released on the Apple App Store.
 <br><br>
 
 <p style="text-align:center;">
