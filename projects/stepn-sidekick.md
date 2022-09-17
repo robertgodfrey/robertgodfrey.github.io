@@ -13,7 +13,7 @@ labels:
 summary: "A companion application for the move-to-earn game STEPN. Developed natively for both Android and iOS."
 ---
 
-<img width="160px" class="rounded float-end" vspace="10px" hspace="10px" src="../img/sidekick/sidekick-logo.png" alt="STEPN Sidekick Logo">
+<img width="160px" class="rounded float-end" vspace="10px" hspace="10px" src="../img/sidekick/curvy-logo.png" alt="STEPN Sidekick Logo">
 
 STEPN Sidekick is a mobile application that I developed during summer break 2022. Created as a companion application for the popular <a href="https://time.com/6207679/move-to-earn-apps-crypto-fitness/" target="_blank">move-to-earn</a> game <a href="https://stepn.com" target="_blank">STEPN</a>, STEPN Sidekick helps players optimize their in-game sneakers and gives audible speed and time alerts while the user walks/jogs/runs. The application was originally built natively for Android with Java was entirely rebuilt for iOS with Swift/SwiftUI (still a WIP).
 
