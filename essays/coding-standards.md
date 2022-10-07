@@ -50,7 +50,7 @@ A few simple coding standards that have been implemented in the second example:
 
 <img width="420px" class="rounded float-end" src="../img/essays/eslint-leviosa.png">
 
-# Code Analysis
+## Code Analysis
 
 How can software engineers avoid committing such heinous crimes? Enter ESLint: one of the most popular tools for analysing JavaScript code. While I do think that ESLint is a great tool, I will admit that I am not a big fan of a few things from the <a href="https://github.com/airbnb/javascript" target="_blank">AirBnb JavaScript Style Guide</a> that we are using in this course. Namely, little things like "no double-quoted strings", "no extra space at the end of a file", and "trailing comments in an object declaration" bug me. In the style guide, many of the standards have a "why?" section explaining the reasoning behind the standard. <a href="https://github.com/airbnb/javascript#strings--quotes" target="_blank">This section is omitted in the "no double-quoted strings" standard</a> (and other places as well). I am also more than slightly annoyed every time I see a red "error" but it turns out to be a *style* error, not an actual coding error.
 
