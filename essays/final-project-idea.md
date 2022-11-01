@@ -10,7 +10,7 @@ labels:
 
 ## Hike-Finder Application
 
-*Colby Kagamida, Kayla Hirano,  Rob Godfrey*
+*Collaboratively written by Colby Kagamida, Kayla Hirano, and Rob Godfrey*
 
 ### Overview:
 
