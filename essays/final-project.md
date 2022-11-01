@@ -10,20 +10,21 @@ labels:
 
 ## Hike-Finder Application
 
-#### *Colby Kagamida, Kayla Hirano,  Rob Godfrey*
+*Colby Kagamida, Kayla Hirano,  Rob Godfrey*
+
 ### Overview:
 
 *Problem:*
 Students may have difficulty finding good hikes around UH Manoa without needing to rely on recommendations, since online sources tend to only list the more popular hikes. Students may also have difficulty meeting other students with similar hiking preferences to themselves.
 
 *Solution:*
-Application to find hikes: users can add new hikes around UH Manoa, rate hikes, form groups to plan hiking trips together. Info about hikes can include distance from UH, how to get there, what to bring, hike distance, difficulty, etc
+Application to find hikes: users can add new hikes around UH Manoa, rate hikes, form groups to plan hiking trips together. Info about hikes can include distance from UH, how to get there, what to bring, hike distance, difficulty, etc.
 
 ### Approach
 
 This application would have two user roles, administrator and regular user. All users must login with their UH ID. Regular users can browse the list of hikes available, rate and review hikes, add new hikes, and plan hikes with other students. Admins make sure site content is appropriate. They may remove inappropriate hikes/reviews and delete users for violating the site policies.
 
-Users can specify their experience level and which hikes they are interested in doing and when they are free. They can also indicate whether they have transportation and would be willing to give other students a ride.
+Users can specify their experience level, which hikes they are interested in doing, and when they are free. They can also indicate whether they have transportation and would be willing to give other students a ride.
 
 **Mockup page ideas**
 
@@ -41,7 +42,7 @@ Users can specify their experience level and which hikes they are interested in 
     - Show hiking groups / other users that the user is following
 - Hike list page
     - Browse hike by distance from UH, how to get there, what to bring, hike distance, difficulty, etc
-    - Upcoming planned hikes page
+- Upcoming planned hikes page
     - Users can plan a hike and create an ‘event’ where other users can indicate that they are interested in going
 
 ### Use case ideas
