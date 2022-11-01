@@ -10,7 +10,7 @@ labels:
 
 ## Hike-Finder Application
 
-*Collaboratively written by Colby Kagamida, Kayla Hirano, and Rob Godfrey*
+*Collaboratively written by [Colby Kagamida](https://colbykag.github.io/), [Kayla Hirano](https://khirano7.github.io/), and [Rob Godfrey](https://robertgodfrey.github.io/)*.
 
 ### Overview:
 
@@ -47,7 +47,7 @@ Users can specify their experience level, which hikes they are interested in doi
 
 ### Use case ideas
 
-- New user goes to the landing page, logs in, gets the home page, sets up a minimal profile. There is a quick tutorial for how to use the site when creating a new account.
+- New user goes to the landing page, logs in, gets the home page, sets up a minimal profile. There is a quick tutorial on how to use the site after creating a new account.
 - Admin goes to the landing page, logs in, gets the home page, edits the site. Admins have the ability to remove users and remove inappropriate/illegal hikes & content. New hikes added must be approved by an admin.
 - User goes to the landing page, logs in, and looks for hikes of interest. Users can also go to the hike suggestion page to request that a hike be added to the site.
 
