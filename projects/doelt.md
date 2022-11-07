@@ -9,7 +9,7 @@ labels:
   - JavaScript
   - Meteor
   - MongoDB
-  - HACC 2022
+  - Hackathon
 summary: " A modern web application designed to help the State of Hawaii’s Department of Education keep track of state legislature more efficiently. Second-place winner of the 2022 Hawaii Annual Code Challenge."
 ---
 <div class="text-center mt-4">
@@ -33,7 +33,7 @@ Department of Education Legislative Tracker (DOELT) is a web application that is
 
 DOELT was built with MeteorJS: the frontend was built with React, Bootstrap, and the FullCalendar library, the backend was built with MongoDB, and the scrapers were built with Axios, Express JS, and Cheerio. Throughout the development of the app, our team collaborated via GitHub for hosting our repository and tracking issues, and Discord for meetings and chat-based communication. Each team member took on specific tasks and issues and we met multiple times each week to make sure that we were all on the same page.
 
-I mainly focused on the frontend and the user interface for this project. I designed the login page, styled the navbar and the dashboard pages, created the testimony PDF editor and saver, and designed the 'Bill Details' page. I also helped work on the filter and search functions and helped link the UI with the scraped data and the database. Additionally, I created the video that was used as our submission to the HACC. This was the first time that I have worked as part of a group to develop and application, and the first hackathon I have taken part of. I learned how to use Git for collaboration, including when to branch, when to merge, and how to solve merge conflicts. I also learned the ins and outs of Meteor and MongoDB - how to set up a database, define schema, and link the database with the user interface.
+I mainly focused on the frontend and the user interface for this project. I designed the login page, styled the navbar and the dashboard pages, created the testimony PDF editor and saver, and designed the 'Bill Details' page. I also helped with the filter and search functions and with linking the UI with the scraped data and the data from the database. Additionally, I created the video that was used as our submission to the HACC. This was the first time that I have worked as part of a group to develop an application, and the first hackathon I have taken part of. I learned how to use Git for collaboration, including when to branch, when to merge, and how to solve merge conflicts. I also learned the ins and outs of Meteor and MongoDB, how to set up a database, define schema, and link the database with the user interface.
 
 <figure class="mt-5">
   <p style="text-align:center;">
@@ -47,7 +47,7 @@ I mainly focused on the frontend and the user interface for this project. I desi
   <img width="60%" src="../img/doelt/doelt-all-bills.png" alt="View All Bills Page">
 </div>
 <div class="text-center">
-  View and sort all of the bills from the capitol's website.
+  View and sort a list of all of the bills from the capitol's website.
 </div>
 
 <div class="col d-flex justify-content-center mt-2">
