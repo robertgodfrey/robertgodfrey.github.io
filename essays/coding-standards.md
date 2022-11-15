@@ -4,7 +4,7 @@ type: essay
 title: "ReferenceError: ‘codingStandards’ is not defined"
 # All dates must be YYYY-MM-DD format!
 date: 2022-09-22
-published: true
+published: false
 labels:
   - Coding Standards
 ---
