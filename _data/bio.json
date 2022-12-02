@@ -4,7 +4,6 @@
     "label": "Student",
     "picture": "https://i.imgur.com/qBHD0o3.png",
     "email": "godfrey7@hawaii.edu",
-    "phone": "509-860-6053",
     "website": "https://robertgodfrey.github.io",
     "summary": "I am a computer science student at the University of Hawaii at Manoa. I expect to graduate in 2024 and plan on pursuing a career as a software engineer.",
     "location": { "address": "", "postalCode": "96812", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
