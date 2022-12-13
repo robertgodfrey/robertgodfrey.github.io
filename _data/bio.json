@@ -20,18 +20,17 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": ["Java", "Javascript", "PHP", "C", "C++", "Python", "Swift", "Perl" ]
+      "keywords": ["Java", "C", "C++", "Python", "Swift", "Perl", "HTML/CSS", "Javascript", "SQL", "PHP", "ReactJS", "Bootstrap" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "MacOS", "Linux", "Git/GitHub", "Android Studio", "Xcode", "Adobe Photoshop", "Adobe Illustrator" ]
+      "keywords": [ "Windows", "MacOS", "Linux", "Git/GitHub", "Android Studio/IntelliJ Idea", "Xcode", "Adobe Photoshop", "Adobe Illustrator" ]
     }
   ],
   "education": [
     {
       "institution": "University of Hawaii at Manoa",
-      "area": "Bachelor of Arts in Korean",
-      "studyType": "Bachelor of Science in Computer Science",
+      "area": "Bachelor of Science in Computer Science"
       "startDate": "2022",
       "endDate": "Present",
       "courses": [
@@ -47,6 +46,7 @@
       "startDate": "2020",
       "endDate": "2021",
       "courses": [
+        "Relevant Coursework: Data Structures, Intro to Scripting",
         "GPA: 4.0"
       ]
     }
