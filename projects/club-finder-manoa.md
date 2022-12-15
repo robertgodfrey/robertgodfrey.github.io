@@ -24,15 +24,27 @@ Club Finder Manoa was created as a team final project for ICS 314 - Software Eng
 
 I worked on both the frontend and the backend on this project. For the frontend, I designed a number of pages including the landing page, admin page, and signup page. I also styled each page of the application and created the filter and search functions on the "All Clubs" page. For the backend, I created the various collections that are used in the application, helped load them with data, and implemented the functions necessary to link the database with the frontend. Additionally, I helped write and integrate the unit tests for the application using TestCafe. This was the second moderately-sized web application that I have worked on and the second software project that I have worked on collaboratively as part of a team. While developing this project, I learned more about Meteor, MongoDB, and React. I also learned how to implement unit tests and continuous integration with TestCafe and Github Actions.
 
-<!--
 <div class="col d-flex justify-content-center">
-  <img width="60%" src="../img/doelt/doelt-all-bills.png" alt="View All Bills Page">
+  <img width="60%" src="../img/club-finder-manoa/all-clubs.png" alt="View All Clubs Page">
 </div>
 <div class="text-center">
-  View a list of all of the clubs in the database
+  List of all of the clubs in the database
 </div>
--->
-
+<br>
+<div class="col d-flex justify-content-center">
+  <img width="60%" src="../img/club-finder-manoa/one-club.png" alt="View Club Page">
+</div>
+<div class="text-center">
+  View more detailed information about a specific club
+</div>
+<br>
+<div class="col d-flex justify-content-center">
+  <img width="60%" src="../img/club-finder-manoa/admin.png" alt="Admin Page">
+</div>
+<div class="text-center">
+  Admin page to view and edit users
+</div>
+<br>
 <br>
 <p style="text-align:center;">
   More details can be found at our <a href="https://club-finder-manoa.github.io/" target="_blank">project page</a>.
