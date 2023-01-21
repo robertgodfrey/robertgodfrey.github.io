@@ -20,7 +20,7 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": ["Java", "C", "C++", "Python", "Swift", "Perl", "HTML/CSS", "Javascript", "SQL", "PHP", "ReactJS", "Bootstrap" ]
+      "keywords": ["Java", "C", "C++", "Python", "Swift", "Perl", "HTML/CSS", "Javascript", "SQL", "ReactJS", "Bootstrap", "MeteorJS" ]
     },
     {
       "name": "Toolsets/OS",
@@ -35,8 +35,8 @@
       "endDate": "Present",
       "courses": [
         "Expected Graduation: 2024",
-        "Relevant Coursework: Program Structure, Software Engineering, Algorithms",
-        "Current GPA: 4.0"
+        "Relevant Coursework: Program Structure, Software Engineering, Algorithms, Database Systems, Machine-Level and Systems Programming, Operating Systems, Programming Language Theory, Linear Algebra",
+        "Current GPA: 3.96"
       ]
     },
     {
