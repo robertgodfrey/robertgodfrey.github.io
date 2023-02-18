@@ -1,11 +1,11 @@
 {
   "basics": {
-    "name": "Rob Godfrey",
-    "label": "Student",
-    "picture": "https://i.imgur.com/qBHD0o3.png",
+    "name": "Robert Godfrey",
+    "label": "Undergraduate Student",
+    "picture": "/img/pfp.png",
     "email": "godfrey7@hawaii.edu",
     "website": "https://robertgodfrey.github.io",
-    "summary": "I am a computer science student at the University of Hawaii at Manoa. I expect to graduate in 2024 and plan on pursuing a career as a software engineer.",
+    "summary": "I am a computer science student at the University of Hawai‘i at Manoa. I expect to graduate in May 2024 and plan on pursuing a career as a software engineer.",
     "location": { "address": "", "postalCode": "96812", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "robertgodfrey", "url": "https://github.com/robertgodfrey" },
@@ -16,56 +16,5 @@
     { "name": "Application Development" },
     { "name": "Cryptography" },
     { "name": "Augmented Reality" }
-  ],
-  "skills": [
-    {
-      "name": "Languages and Frameworks",
-      "keywords": ["Java", "C", "C++", "Python", "Swift", "Perl", "HTML/CSS", "Javascript", "SQL", "ReactJS", "Bootstrap", "MeteorJS" ]
-    },
-    {
-      "name": "Toolsets/OS",
-      "keywords": [ "Windows", "MacOS", "Linux", "Git/GitHub", "Android Studio/IntelliJ Idea", "Xcode", "Adobe Photoshop", "Adobe Illustrator" ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Hawaii at Manoa",
-      "area": "Bachelor of Science in Computer Science",
-      "startDate": "2022",
-      "endDate": "Present",
-      "courses": [
-        "Expected Graduation: 2024",
-        "Relevant Coursework: Program Structure, Software Engineering, Algorithms, Database Systems, Machine-Level and Systems Programming, Operating Systems, Programming Language Theory, Linear Algebra",
-        "Current GPA: 3.96"
-      ]
-    },
-    {
-      "institution": "Windward Community College",
-      "area": "Natural Science: Information and Communications Technology",
-      "studyType": "Associate of Science",
-      "startDate": "2020",
-      "endDate": "2021",
-      "courses": [
-        "Relevant Coursework: Data Structures, Intro to Scripting",
-        "GPA: 4.0"
-      ]
-    }
-  ],
-  "work": [
-    {
-      "company": "United States Army",
-      "position": "Soldier",
-      "startDate": "2011-09",
-      "endDate": "2021-09",
-      "summary": "",
-      "highlights": [
-        "Served in a variety of roles and deployed to several locations around the world with a concentration in Asia."
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Available upon request"
-    }
   ]
 }
