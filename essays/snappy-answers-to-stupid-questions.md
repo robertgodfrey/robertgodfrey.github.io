@@ -5,9 +5,6 @@ title: Snappy Answers to Stupid Questions
 # All dates must be YYYY-MM-DD format!
 date: 2022-09-08
 published: true
-labels:
-  - Culture
-  - Netiquette
 ---
 
 <img height="400px" class="float-end" vspace="10px" hspace="10px" src="../img/essays/mad-mag-comic.jpg" alt="Snappy Answers to Stupid Questions from Mad Magazine">
@@ -60,4 +57,4 @@ A few hours later, I checked the post again and saw that the user who had asked 
   <img width="600px" vspace="10px" src="../img/essays/oh-he-is-only-twelve.png" alt="Okay, fair enough">
 </p>
 
-Well, okay, fair enough then. We all have to start somewhere.
+Well, okay, now I feel bad. We all started somewhere!

@@ -5,8 +5,6 @@ title: Software Engineering for Dummies
 # All dates must be YYYY-MM-DD format!
 date: 2022-09-03
 published: true
-labels:
-  - Software Engineering
 ---
 
 <img width="300px" class="rounded float-end" vspace="10px" src="../img/essays/cpp-dummies.png">

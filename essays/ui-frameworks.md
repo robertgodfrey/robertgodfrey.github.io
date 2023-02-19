@@ -5,9 +5,6 @@ title: "UI Design the Easy Way"
 # All dates must be YYYY-MM-DD format!
 date: 2022-10-06
 published: true
-labels:
-  - UI Frameworks
-  - Twitter Bootstrap
 ---
 
 <figure class="rounded float-end ps-3">

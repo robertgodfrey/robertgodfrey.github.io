@@ -12,21 +12,13 @@ labels:
   - Hackathon
 summary: "A modern web application designed to help the State of Hawaii’s Department of Education keep track of state legislature more efficiently. Second-place winner of the 2022 Hawaii Annual Code Challenge."
 ---
-<div class="text-center mt-4">
+<div class="my-3">
   <i>This application was developed for the Hawai'i Annual Code Challenge (HACC) 2022, where it came in 2nd place out of 44 teams.</i>
 </div>
-
-<div class="col d-flex justify-content-center mt-3">
-  <img width="30%" src="../img/doelt/hacc-logo.png" alt="Hawaii Annual Code Challenge Logo">
-</div>
-
-
 
 <div class="col d-flex justify-content-center">
   <img width="75%" src="../img/doelt/doelt-landing.png" alt="DOELT Login Page">
 </div>
-
-
 
 <div class="mt-2"></div>
 Department of Education Legislative Tracker (DOELT) is a web application that is designed to replace the Hawaii DOE's current legislative tracking system, which is over twenty years old and is no longer maintained. DOELT is a modern, user-friendly application that allows users to seamlessly track and save bills, edit and approve testimonies, and keep track of upcoming hearings through an integrated calendar. The application integrates a custom-built scraper to ensure it always displays the latest legislative information from the state capitol's website.
