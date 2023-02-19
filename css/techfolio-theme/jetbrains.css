@@ -1,0 +1,60 @@
+/* Rubik Theme: modifies the default theme to use the chunkier Rubik for the header fonts. */
+
+/* Use Open Sans as the default font and Roboto for headlines */
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
+
+/* See https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables for variables to override. */
+:root {
+  --bs-font-sans-serif: "Open Sans", sans-serif;
+  --bs-link-color: #53b7db;
+  --bs-link-hover-color: #96cde0;
+  --tf-pill-bg: #222222;
+  --tf-icon-fill: var(--bs-gray);
+  --tf-page-bg-color: var(--bs-white);
+  --tf-footer-bg-color: var(--bs-gray-200);
+  --tf-projects-bg-color: var(--bs-gray-100);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: Open Sans;
+}
+
+/* Format social media icons */
+.tf-social {
+  display: inline-block;
+  height: 1.5em;
+  vertical-align: -.1em;
+  width: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  --bs-nav-link-color: white;
+  --bs-nav-link-hover-color: #9aacb7;
+  font-weight: 500;
+}
+
+.navbar {
+  background: #3c3f41;
+  --bs-border-color: #222222;
+  --bs-border-radius: 3px;
+}
+
+#profileText {
+  font-size: 0;
+  font-family: "JetBrains Mono";
+}
+
+.lineNums {
+  width: 40px;
+}
+
+/* Simplify the styling of the bottom of Essay cards. */
+.card-footer {
+  background-color: #2e3032;
+  border-top: none;
+}

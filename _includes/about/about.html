@@ -1,45 +1,67 @@
-<div style="background-color: var(--tf-page-bg-color)" class="bg-gradient py-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <img width="300px" src="{{ site.data.bio.basics.picture }}" class="d-block mx-auto rounded-circle">
-      </div>
-      <div class="col-lg-8">
-        <h1 class="display-4 text-center">{{ site.data.bio.basics.name }}</h1>
-        <p class="lead text-center">{{ site.data.bio.basics.label }}</p>
-        <p class="lead">{{ site.data.bio.basics.summary }}</p>
-        <hr class="my-4">
-        <p class="lead m-0">
-          Interests:
-          {% for interest in site.data.bio.interests %}
-          {{ interest.name }}{% if forloop.last != true %}, {% endif %}
-          {% endfor %}
-        </p>
-        <hr class="my-4">
-        <div class="row">
-
-          {% if site.data.bio.basics.website %}
-            {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
-            <div class="col text-center">
-              {% include about/social.html url=url name='house' %}
+<div style="background-color: #2b2b2b" class="container py-4">
+  <div class="row">
+    <div id="profileText" class="lineNums my-3">
+      <span class="lead" style="color: #5b5b5b;">1<span style="color: #2b2b2b; font-size: 2rem;"></span></span>
+      <p class="lead mt-2" style="color: #555555;">2</p>
+      <p class="lead mt-2">
+        <span style="color: #4b4b4b;">3</span><br/>
+        <span style="color: #444444;">4</span><br/>
+        <span style="color: #3b3b3b;">5</span>
+      </p>
+      <p class="lead mt-2" style="color: #333333;">6</p>
+      <p class="lead mt-2" style="color: #2f2f2f;">7</p>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div id="profileText" class="col-lg-9 my-3">
+          <span class="lead" style="color: #cb6f2e;">class&nbsp;</span>
+          <span class="lead" style="color: #ffc66d; font-size: 2rem;"><b>RobertGodfrey</b></span>
+          <span class="lead" style="color: #a9b7c6;"><b>(UndergraduateStudent):</b></span><br />
+          <p class="lead mt-2 ms-5" style="color: #619652">"""</p>
+          <p class="lead mt-2 ms-5" style="color: #619652">{{ site.data.bio.basics.summary }}</p>
+          <p class="lead mt-2 ms-5" style="color: #619652">"""</p>
+          <span class="lead ms-5" style="color: #a9b7c6;">interests = [</span>
+          <span class="lead" style="color: #619652">'Application Development'</span>
+          <span class="lead" style="color: #cb6f2e;">,</span>
+          <span class="lead" style="color: #619652">'Cryptography'</span>
+          <span class="lead" style="color: #cb6f2e;">,</span>
+          <span class="lead" style="color: #619652">'Augmented Reality'</span>
+          <span class="lead" style="color: #a9b7c6;">]</span>
+          <hr class="my-4" style="color: #555555; border-top: 2px solid" />
+          <div class="row" style="font-size: 1.2rem;">
+            <div class="col text-center mt-2">
+              <a href="{{ '/' | prepend: site.baseurl }}">
+                <svg class="tf-social" style="fill: #8F8F8F;">
+                  <use xlink:href="/img/bootstrap-icons.svg#house-fill"/>
+                </svg>
+              </a>
             </div>
-          {% endif %}
-
-          {% if site.data.bio.basics.email %}
-            {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
-            <div class="col text-center">
-              {% include about/social.html url=url name='envelope' %}
+            <div class="col text-center mt-2">
+              <a href="mailto:rob_godfrey@outlook.com">
+                <svg class="tf-social" style="fill: #d5244e;">
+                  <use xlink:href="/img/bootstrap-icons.svg#envelope-fill"/>
+                </svg>
+              </a>
             </div>
-          {% endif %}
-
-          {% for profile in site.data.bio.basics.profiles %}
-            {% capture url %}{{ profile.url }}{% endcapture %}
-            {% capture name %}{{ profile.network | downcase }}{% endcapture %}
-            <div class="col text-center">
-              {% include about/social.html url=url name=name %}
+            <div class="col text-center mt-2">
+              <a href="https://github.com/robertgodfrey" target="_blank">
+                <svg class="tf-social" style="fill: white;">
+                  <use xlink:href="/img/bootstrap-icons.svg#github"/>
+                </svg>
+              </a>
             </div>
-          {% endfor %}
+            <div class="col text-center mt-2">
+              <a href="https://www.linkedin.com/in/bob-godfrey" target="_blank">
+                <svg class="tf-social" style="fill: #0a66c2">
+                  <use xlink:href="/img/bootstrap-icons.svg#linkedin"/>
+                </svg>
+              </a>
+            </div>
 
+          </div>
+        </div>
+        <div class="col-lg-2 mt-4">
+          <img width="300px" src="{{ site.data.bio.basics.picture }}" class="d-block mx-auto rounded">
         </div>
       </div>
     </div>
