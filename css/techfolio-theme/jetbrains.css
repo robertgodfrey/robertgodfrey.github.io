@@ -28,6 +28,10 @@ h1,h2,h3,h4,h5 {
   width: 1.5em;
 }
 
+.lead {
+  font-size: 1.2rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -42,11 +46,6 @@ a {
   background: #3c3f41;
   --bs-border-color: #222222;
   --bs-border-radius: 3px;
-}
-
-#profileText {
-  font-size: 0;
-  font-family: "JetBrains Mono";
 }
 
 .lineNums {
