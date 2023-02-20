@@ -23,9 +23,14 @@ h1,h2,h3,h4,h5 {
 /* Format social media icons */
 .tf-social {
   display: inline-block;
-  height: 1.5em;
+  fill: #888888;
+  height: 1.2em;
   vertical-align: -.1em;
-  width: 1.5em;
+  width: 1.2em;
+}
+
+.tf-social:hover {
+  fill: #cccccc;
 }
 
 .lead {
@@ -48,8 +53,16 @@ a {
   --bs-border-radius: 3px;
 }
 
-.lineNums {
-  width: 40px;
+@media (min-width: 700px) {
+  .lineNums {
+    width: 40px;
+  }
+}
+
+@media (max-width: 699px) {
+  .lineNums {
+    visibility: hidden;
+  }
 }
 
 /* Simplify the styling of the bottom of Essay cards. */

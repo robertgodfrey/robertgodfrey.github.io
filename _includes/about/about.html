@@ -1,69 +1,72 @@
 <div style="background-color: #2b2b2b" class="container py-4">
-  <div class="row">
-    <div id="profileText" class="lineNums my-3" style="font-size: 1.25rem;">
-      <span style="color: #5b5b5b;">1<span style="color: #2b2b2b; font-size: 2rem;"></span></span>
-      <p class="mt-2" style="color: #555555;">2</p>
-      <p class="mt-2">
-        <span style="color: #4b4b4b;">3</span><br/>
-        <span style="color: #444444;">4</span><br/>
-        <span style="color: #3b3b3b;">5</span>
-      </p>
-      <p class="mt-2" style="color: #333333;">6</p>
-      <p class="mt-2" style="color: #2f2f2f;">7</p>
+  <div class="row mb-4 ps-5">
+    <div class="col-lg-3 mt-4">
+      <img width="300px" src="{{ site.data.bio.basics.picture }}" class="d-block mx-auto rounded-circle">
     </div>
-    <div class="col">
+    <div class="col-lg-9 ps-4 mt-3" style="font-size: 18px;">
       <div class="row">
-        <div class="col-lg-9 my-3" style="font-family: JetBrains Mono;">
-          <span class="lead" style="color: #cb6f2e;">class&nbsp;</span><span class="lead" style="color: #ffc66d; font-size: 2rem;"><b>RobertGodfrey</b></span><span class="lead" style="color: #a9b7c6;"><b>(UndergraduateStudent):</b></span>
-          <br />
-          <p class="lead mt-2 ms-5" style="color: #619652">"""</p>
-          <p class="mt-2 ms-5" style="color: #619652; height: 5.75rem;">
-            <span id="bio" class="lead">I am a computer science student </span><span id="cursor1" class="lead" style="color: #555555; font-size: 20px; border: solid 2px"></span>
-          </p>
-          <p class="lead mt-2 ms-5" style="color: #619652; height: 2rem;"><span id="bottomQuotes" class="lead"></span><span id="cursor2" class="lead" style="color: #555555; font-size: 20px; border: solid 2px; visibility: hidden"></span></p>
-          <span class="lead ms-5" id="interestsStart" style="color: #a9b7c6;"></span><span id="appDev" class="lead" style="color: #619652"></span><span id="comma1" class="lead" style="color: #cb6f2e;"></span><span id="crypto" class="lead" style="color: #619652;"></span><span id="comma2" class="lead" style="color: #cb6f2e;"></span><span id="augment" class="lead" style="color: #619652;"></span><span id="cursor3" class="lead" style="color: #555555; font-size: 20px; border: solid 2px; visibility: hidden"></span><span id="closingBracket" class="lead" style="color: #a9b7c6; visibility: hidden;">]</span>
-          <hr class="my-4" style="color: #555555; border-top: 2px solid" />
-          <div class="row" style="font-size: 1.2rem;">
-            <div class="col text-center mt-2">
-              <a href="{{ '/' | prepend: site.baseurl }}">
-                <svg class="tf-social" style="fill: #8F8F8F;">
-                  <use xlink:href="/img/bootstrap-icons.svg#house-fill"/>
-                </svg>
-              </a>
-            </div>
-            <div class="col text-center mt-2">
-              <a href="mailto:rob_godfrey@outlook.com">
-                <svg class="tf-social" style="fill: #d5244e;">
-                  <use xlink:href="/img/bootstrap-icons.svg#envelope-fill"/>
-                </svg>
-              </a>
-            </div>
-            <div class="col text-center mt-2">
-              <a href="https://github.com/robertgodfrey" target="_blank">
-                <svg class="tf-social" style="fill: white;">
-                  <use xlink:href="/img/bootstrap-icons.svg#github"/>
-                </svg>
-              </a>
-            </div>
-            <div class="col text-center mt-2">
-              <a href="https://www.linkedin.com/in/bob-godfrey" target="_blank">
-                <svg class="tf-social" style="fill: #0a66c2">
-                  <use xlink:href="/img/bootstrap-icons.svg#linkedin"/>
-                </svg>
-              </a>
-            </div>
-
-          </div>
+        <div class="lineNums my-3">
+          <span style="color: #5b5b5b;">1<span style="color: #2b2b2b; font-size: 2rem;"></span></span>
+          <span class="mt-2" style="color: #555555;">2</span><br/>
+          <span style="color: #4b4b4b;">3</span><br/>
+          <span style="color: #444444;">4</span><br/>
+          <span style="color: #3b3b3b;">5</span><br />
+          <span class="mt-2" style="color: #333333;">6</span><br />
+          <span class="mt-2" style="color: #2f2f2f;">7</span>
         </div>
-        <div class="col-lg-2 mt-4">
-          <img width="300px" src="{{ site.data.bio.basics.picture }}" class="d-block mx-auto rounded">
+        <div class="col my-3" style="font-family: JetBrains Mono;">
+          <span style="color: #cb6f2e;">class&nbsp;</span><span style="color: #ffc66d; font-size: 2rem;">RobertGodfrey</span><span style="color: #a9b7c6;">(UndergraduateStudent):</span>
+          <br />
+          <span class="ms-5" style="color: #619652">"""</span><br/>
+          <p class="ms-5 m-0 p-0" style="color: #619652;">
+            <span id="bio" style="font-style: italic;">I am a computer science student at the University of Hawai‘i at Mānoa.</span><span id="cursor1" style="color: #777777; border: solid 1px"></span>
+          </p>
+          <span class="ms-5" style="color: #619652;">
+            <span id="bottomQuotes">"""</span><span id="cursor2" style="color: #777777; border: solid 1px; visibility: hidden"></span>
+          </span>
+          <p class="ms-5 m-0 p-0">
+            <span id="interestsStart" style="color: #a9b7c6;"></span><span id="openingBracket" style="color: #a9b7c6;"></span><span id="appDev" style="color: #619652"></span><span id="comma1" style="color: #cb6f2e;"></span><span id="crypto" style="color: #619652;"></span><span id="comma2" style="color: #cb6f2e;"></span><span id="augment" style="color: #619652;"></span><span id="quote" style="color: #619652;"></span><span id="cursor3" style="color: #777777; border: solid 1px; visibility: hidden"></span><span id="closingBracket" style="color: #a9b7c6; visibility: hidden;">]</span>
+          </p>
+        </div>
+      </div>
+      <hr class="my-4 ps-5 ms-5" style="color: #555555; border-top: 2px solid" />
+      <div class="row mx-5 ps-5" style="font-size: 1.2rem;">
+        <div class="col text-center mt-2">
+          <a href="{{ '/' | prepend: site.baseurl }}">
+            <svg class="tf-social">
+              <use xlink:href="/img/bootstrap-icons.svg#house-fill"/>
+            </svg>
+          </a>
+        </div>
+        <div class="col text-center mt-2">
+          <a href="mailto:rob_godfrey@outlook.com">
+            <svg class="tf-social">
+              <use xlink:href="/img/bootstrap-icons.svg#envelope-fill"/>
+            </svg>
+          </a>
+        </div>
+        <div class="col text-center mt-2">
+          <a href="https://github.com/robertgodfrey" target="_blank">
+            <svg class="tf-social">
+              <use xlink:href="/img/bootstrap-icons.svg#github"/>
+            </svg>
+          </a>
+        </div>
+        <div class="col text-center mt-2">
+          <a href="https://www.linkedin.com/in/bob-godfrey" target="_blank">
+            <svg class="tf-social">
+              <use xlink:href="/img/bootstrap-icons.svg#linkedin"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </div>
   <script>
-    const bioText = 'at the University of Hawai‘i at Mānoa. I expect to graduate in May 2024 and plan on pursuing a career as a software engineer.';
-    const speed = 50; /* The speed/duration of the effect in milliseconds */
+    // mom's spaghetti. ye have been warned
+    const bioText = ' I expect to graduate in May 2024 and plan on pursuing a career as a software engineer.';
+    const speed = 50;
+    let first = true;
 
     function typeWriter(text, element, cursorStart, cursorEnd, delayTime) {
       let i = 0;
@@ -71,38 +74,75 @@
       function typeWriterAux(text, element) {
         if (i < text.length) {
           document.getElementById(element).innerHTML += text.charAt(i);
-          if (text.charAt(i) == '[') {
+          if (text.charAt(i - 1) == '=') {
+            document.getElementById('openingBracket').innerHTML = '[';
             document.getElementById('closingBracket').style.visibility='visible';
+            document.getElementById('openingBracket').style.color='#ffe835';
+            document.getElementById('closingBracket').style.color='#ffe835';
+            document.getElementById('openingBracket').style.backgroundColor='#3b514d';
+            document.getElementById('closingBracket').style.backgroundColor='#3b514d';
+          } else if (text.charAt(i) == '\'') {
+            if (i == text.length - 1) {
+              document.getElementById('quote').innerHTML = '';
+            } else {
+              document.getElementById('quote').innerHTML = '\'';
+            }
           }
           i++;
           setTimeout(typeWriterAux, 50, text, element);
         } else if (delayTime <= 3) {
-          i = 0;
           flashCursor(cursorStart, delayTime);
           setTimeout(moveCursor, delayTime * 500, cursorStart, cursorEnd, delayTime);
         } else if (delayTime == 3.1) {
           flashCursor(cursorStart, delayTime);
           setTimeout(typeWriter, delayTime * 500, '\'Application Development\'', 'appDev', 'cursor3', 'cursor3', 3.2);
+          setTimeout(clearBrackets, delayTime * 500);
         } else if (delayTime == 3.2) {
           document.getElementById('comma1').innerHTML += ',';
+          //setTimeout(addSpace, 80, 'comma1');
+          highlightBrackets();
           flashCursor(cursorStart, delayTime);
           setTimeout(typeWriter, delayTime * 500, '\'Cryptography\'', 'crypto', 'cursor3', 'cursor3', 3.3);
+          setTimeout(clearBrackets, delayTime * 500);
         } else if (delayTime == 3.3) {
           document.getElementById('comma2').innerHTML += ',';
+          //setTimeout(addSpace, 80, 'comma2');
+          highlightBrackets();
           setTimeout(typeWriter, delayTime * 500, '\'Augmented Reality\'', 'augment', 'cursor3', 'cursor3', 6);
-          flashCursor('cursor3', 200);
+          setTimeout(clearBrackets, delayTime * 500);
+          flashCursor('cursor3', 20);
+        } else if (delayTime > 5) {
+          highlightBrackets();
         }
       }
       typeWriterAux(text, element);
+    }
+
+    function addSpace(commaNum) {
+      document.getElementById(commaNum).innerHTML += ' ';
+    }
+
+    function highlightBrackets() {
+      document.getElementById('openingBracket').style.color='#ffe835';
+      document.getElementById('closingBracket').style.color='#ffe835';
+      document.getElementById('openingBracket').style.backgroundColor='#3b514d';
+      document.getElementById('closingBracket').style.backgroundColor='#3b514d';
+    }
+
+    function clearBrackets() {
+      document.getElementById('openingBracket').style.color='#a9b7c6';
+      document.getElementById('closingBracket').style.color='#a9b7c6';
+      document.getElementById('openingBracket').style.backgroundColor='#2b2b2b';
+      document.getElementById('closingBracket').style.backgroundColor='#2b2b2b';
     }
 
     function moveCursor(cursorStart, cursorEnd) {
       document.getElementById(cursorStart).style.visibility='hidden';
       document.getElementById(cursorEnd).style.visibility='visible';
       if (cursorStart == 'cursor1') {
-        typeWriter('"""', 'bottomQuotes', 'cursor2', 'cursor3', 2);
+        typeWriter('', 'bottomQuotes', 'cursor2', 'cursor3', 2);
       } else if (cursorStart == 'cursor2') {
-        typeWriter('interests = [', 'interestsStart', 'cursor3', 'cursor3', 3.1);
+        typeWriter('interests = ', 'interestsStart', 'cursor3', 'cursor3', 3.1);
       }
     }
 
@@ -117,11 +157,17 @@
           }
           j++;
           setTimeout(flashAux, 500, name, duration);
+        } else if (first) {
+          typeWriter(bioText, 'bio', 'cursor1', 'cursor2', 2);
+          first = false;
+        } else if (duration == 20) {
+          document.getElementById(name).style.visibility='hidden';
+          clearBrackets();
         }
       }
       flashAux(name, duration);
     }
 
-    typeWriter(bioText, 'bio', 'cursor1', 'cursor2', 1);
+    flashCursor('cursor1', 8);
   </script>
 </div>
