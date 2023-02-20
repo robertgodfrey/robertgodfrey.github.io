@@ -27,6 +27,7 @@ h1,h2,h3,h4,h5 {
   height: 1.2em;
   vertical-align: -.1em;
   width: 1.2em;
+  transition: 0.3s;
 }
 
 .tf-social:hover {
@@ -57,10 +58,22 @@ a {
   .lineNums {
     width: 40px;
   }
+  #ide {
+    padding-left: 20px;
+  }
+  .pushRight {
+    padding-left: 2rem;
+  }
 }
 
 @media (max-width: 699px) {
   .lineNums {
+    height: 0;
+    visibility: hidden;
+  }
+  #undergrad {
+    width: 0;
+    font-size: 0;
     visibility: hidden;
   }
 }
