@@ -8,8 +8,6 @@ published: true
 labels:
   - Java
   - Swift
-  - XML
-  - GitHub
 summary: "A companion application for the move-to-earn game STEPN. Developed natively for both Android and iOS."
 ---
 

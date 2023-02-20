@@ -7,7 +7,7 @@ date: 2022
 published: true
 labels:
   - JavaScript
-  - Meteor
+  - React
   - MongoDB
   - Hackathon
 summary: "A modern web application designed to help the State of Hawaii’s Department of Education keep track of state legislature more efficiently. Second-place winner of the 2022 Hawaii Annual Code Challenge."

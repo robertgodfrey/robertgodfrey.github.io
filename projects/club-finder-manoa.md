@@ -7,7 +7,7 @@ date: 2022
 published: true
 labels:
   - JavaScript
-  - Meteor
+  - React
   - MongoDB
   - TestCafe
 summary: "Web application designed to help students at the University of Hawaii find clubs based on their interests and connect with other students."

@@ -7,7 +7,6 @@ date: 2020
 published: true
 labels:
   - Java
-  - XML
 summary: "Android application designed for military free-fall jumpmasters (MFFJM). Includes jump calculations, a Military CYPRES calculator, altimeter calculator, and a copy of MFF sustained airborne training."
 ---
 
