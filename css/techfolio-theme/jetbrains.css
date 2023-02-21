@@ -54,6 +54,12 @@ a {
   --bs-border-radius: 3px;
 }
 
+.footer {
+  background: #262626;
+  --bs-border-color: #1f1f1f;
+  --bs-border-radius: 3px;
+}
+
 @media (min-width: 700px) {
   .lineNums {
     width: 40px;

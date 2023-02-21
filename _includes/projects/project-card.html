@@ -1,4 +1,4 @@
-<div class="card mb-3" style="background-color: #2b2b2b; color: #eeeeee;">
+<div class="card mb-3" style="background-color: #2f2f2f; color: #dddddd;">
   <div class="row g-0">
     <div class="col-sm-6 col-md-3">
       <a href="{{ site.baseurl}}{{ include.page.url }}">
@@ -11,7 +11,7 @@
         <p class="card-text">{{ include.page.summary }}</p>
         <p>
           {% for label in include.page.labels %}
-          <span style="background-color: var(--tf-pill-bg); color: #eeeeee" class="badge">{{ label }}</span>
+          <span style="background-color: var(--tf-pill-bg); color: #dddddd" class="badge">{{ label }}</span>
           {% endfor %}
         </p>
         <a href="{{ site.baseurl}}{{ include.page.url }}" class="btn btn-outline-light">Read More</a>
