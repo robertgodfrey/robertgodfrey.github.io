@@ -4,7 +4,7 @@ type: essay
 title: Snappy Answers to Stupid Questions
 # All dates must be YYYY-MM-DD format!
 date: 2022-09-08
-published: true
+published: false
 ---
 
 <img height="400px" class="float-end" vspace="10px" hspace="10px" src="../img/essays/mad-mag-comic.jpg" alt="Snappy Answers to Stupid Questions from Mad Magazine">

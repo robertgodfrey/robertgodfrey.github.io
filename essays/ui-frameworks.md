@@ -4,7 +4,7 @@ type: essay
 title: "UI Design the Easy Way"
 # All dates must be YYYY-MM-DD format!
 date: 2022-10-06
-published: true
+published: false
 ---
 
 <figure class="rounded float-end ps-3">
