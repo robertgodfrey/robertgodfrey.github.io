@@ -6,11 +6,11 @@ title: Department of Education Legislative Tracker
 date: 2022
 published: true
 labels:
-  - JavaScript
+  - Meteor.js
   - React
   - MongoDB
   - Hackathon
-summary: "A modern web application designed to help the State of Hawaii’s Department of Education keep track of state legislature more efficiently. Second-place winner of the 2022 Hawaii Annual Code Challenge."
+summary: "Modern web application designed to help the State of Hawaii’s Department of Education keep track of state legislature more efficiently. Second-place winner of the 2022 Hawaii Annual Code Challenge."
 ---
 <div class="my-3">
   <i>This application was developed for the Hawai'i Annual Code Challenge (HACC) 2022, where it came in 2nd place out of 44 teams.</i>

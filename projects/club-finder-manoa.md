@@ -6,7 +6,7 @@ title: Club Finder Mānoa
 date: 2022
 published: true
 labels:
-  - JavaScript
+  - Meteor.js
   - React
   - MongoDB
   - TestCafe
