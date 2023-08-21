@@ -60,6 +60,37 @@ a {
   --bs-border-radius: 3px;
 }
 
+.snek-button-board {
+  width: 201px;
+  height: 50px;
+  border: 1px solid red;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+
+.snek-button-board div {
+  width: 10px;
+  height: 10px;
+  border: 1px green solid;
+}
+
+.snek-button {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: JetBrains Mono;
+  color: #666666;
+  transition: 0.3s;
+  border: none;
+  background: transparent;
+}
+
+.snek-button:hover {
+  color: #dddddd;
+}
+
 @media (min-width: 700px) {
   .lineNums {
     width: 40px;
