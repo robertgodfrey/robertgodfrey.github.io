@@ -61,19 +61,24 @@ a {
 }
 
 .snek-button-board {
-  width: 201px;
+  width: 202px;
   height: 50px;
-  border: 1px solid red;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  opacity: 50%;
   padding: 0 !important;
+  transition: 0.3s;
+}
+
+.snek-button-board:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .snek-button-board div {
   width: 10px;
   height: 10px;
-  border: 1px green solid;
 }
 
 .snek-button {
@@ -81,14 +86,13 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: JetBrains Mono;
-  color: #666666;
-  transition: 0.3s;
+  color: #dddddd;
   border: none;
   background: transparent;
 }
 
-.snek-button:hover {
-  color: #dddddd;
+.snake {
+  background: #619652;
 }
 
 @media (min-width: 700px) {
