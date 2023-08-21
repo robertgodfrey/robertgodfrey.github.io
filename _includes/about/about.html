@@ -31,12 +31,25 @@
             SPEED: <span id="current-speed">100</span>%
           </div>
         </div>
+        <div id="mobile-controls" class="mt-2">
+          <button type="button" id="up-arrow" class="mobile-arrow-btn">↑</button>
+          <div class="row">
+            <div class="col">
+              <button type="button" id="left-arrow" class="mobile-arrow-btn">←</button>
+            </div>
+            <div class="col"></div>
+            <div class="col">
+              <button type="button" id="right-arrow" class="mobile-arrow-btn">→</button>
+            </div>
+          </div>
+          <button type="button" id="down-arrow" class="mobile-arrow-btn">↓</button>
+        </div>
         <div id="snake-game-instructions" class="position-absolute snake-game-instructions text-start p-3">
           Welcome, weary traveler. Take a break and play a few rounds of the classic game Snake.<br/><br/>
           <div class="text-center">INSTRUCTIONS:</div>
-          - Use the arrow keys to move<br/>
+          - Use the arrow keys or WASD to move<br/>
           - Don't hit the walls or yourself<br/>
-          - Eat the apples to get a higher score<br/>
+          - Eat apples to grow bigger and faster<br/>
           <div class="text-center">
             <button id="snake-start-btn" type="button">START</button>
           </div>

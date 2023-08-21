@@ -9,6 +9,7 @@ const height = 20;
 let snake = [2, 1, 0];
 let appleIndex;
 let direction = 1;
+let prevDirection = 1; // to account for fast pressing
 let interval;
 let intervalTime = 200;
 let score = 0;
@@ -64,6 +65,9 @@ function moveSnakeButton(squares) {
 }
 
 const hit = (squares) => {
+  if (snake[0] + direction === snake[1]) {
+    direction = prevDirection;
+  }
   if (
     (snake[0] + width >= width * width && direction === width) ||
     (snake[0] % width === width - 1 && direction === 1) ||
@@ -119,30 +123,34 @@ function moveSnake(squares) {
 }
 
 function control(e) {
-  if (e.code === 'ArrowRight') {
+  if (e.code === 'ArrowRight' || e.code === 'KeyD') {
     e.preventDefault();
     if (direction === -1) {
       return;
     }
-    direction = 1; // right
-  } else if (e.code === 'ArrowUp') {
+    prevDirection = direction;
+    direction = 1; // right one div
+  } else if (e.code === 'ArrowUp' || e.code === 'KeyW') {
     e.preventDefault();
     if (direction === width) {
       return;
     }
-    direction = -width; //if we press the up arrow, the snake will go ten divs up
-  } else if (e.code === 'ArrowLeft') {
+    prevDirection = direction;
+    direction = -width; // snake goes 20 divs up
+  } else if (e.code === 'ArrowLeft' || e.code === 'KeyA') {
     e.preventDefault();
     if (direction === 1) {
       return;
     }
-    direction = -1; // left, the snake will go left one div
-  } else if (e.code === 'ArrowDown') {
+    prevDirection = direction;
+    direction = -1; // left one div
+  } else if (e.code === 'ArrowDown' || e.code === 'KeyS') {
     e.preventDefault();
     if (direction === -width) {
       return;
     }
-    direction = +width; // down, the snake head will appear 20 divs below from the current div
+    prevDirection = direction;
+    direction = +width; // down 20 divs
   }
 }
 
@@ -203,4 +211,37 @@ document.getElementById('snake-start-btn').onclick = () => {
 
 document.getElementById('snake-restart-btn').onclick = () => {
   restartGame();
+}
+
+document.getElementById('left-arrow').onclick = () => {
+  if (direction === 1) {
+    return;
+  }
+  prevDirection = direction;
+  direction = -1;
+}
+
+document.getElementById('up-arrow').onclick = () => {
+  console.log('up?');
+  if (direction === width) {
+    return;
+  }
+  prevDirection = direction;
+  direction = -width; // snake goes 20 divs up
+}
+
+document.getElementById('right-arrow').onclick = () => {
+  if (direction === -1) {
+    return;
+  }
+  prevDirection = direction;
+  direction = 1; // right one div
+}
+
+document.getElementById('down-arrow').onclick = () => {
+  if (direction === -width) {
+    return;
+  }
+  prevDirection = direction;
+  direction = +width; // down 20 divs
 }
