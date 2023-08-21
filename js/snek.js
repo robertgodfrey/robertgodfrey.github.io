@@ -10,6 +10,7 @@ let snake = [2, 1, 0];
 let appleIndex;
 let direction = 1;
 let interval;
+let intervalTime = 200;
 let score = 0;
 let bestScore = 0;
 
@@ -89,7 +90,15 @@ function eatApple(squares, tail) {
     snake.push(tail);
     genApple(squares);
     score++;
+    if (score > bestScore) {
+      bestScore = score;
+      document.getElementById('best-score').innerHTML = score;
+    }
     document.getElementById('score').innerHTML = score;
+    clearInterval(interval);
+    intervalTime = intervalTime * 0.95;
+    interval = setInterval(moveSnake, intervalTime, squares);
+    document.getElementById('current-speed').innerHTML = Math.round(200 / intervalTime * 100);
   }
 }
 
@@ -97,6 +106,7 @@ function moveSnake(squares) {
   if (hit(squares)) {
     // game over
     document.getElementById('game-over').style.display = 'inline';
+    document.getElementById('last-score').innerHTML = score;
     clearInterval(interval);
     document.addEventListener('keydown', enterToRestart);
   } else {
@@ -147,6 +157,8 @@ function startGame() {
   snake.forEach((index) => squares[index].classList.add('snake'));
   document.addEventListener('keydown', control);
   genApple(squares);
+  intervalTime = 200;
+  direction = 1;
   interval = setInterval(moveSnake, 200, squares);
 }
 
@@ -157,7 +169,9 @@ function restartGame() {
   snake.forEach((index) => squares[index].classList.remove('snake'));
   squares[appleIndex].classList.remove('apple');
   snake = [2, 1, 0];
-  direction = 1;
+  score = 0;
+  document.getElementById('score').innerHTML = 0;
+  document.getElementById('current-speed').innerHTML = 100;
   startGame();
 }
 

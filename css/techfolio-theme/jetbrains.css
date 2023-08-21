@@ -100,18 +100,19 @@ a {
 }
 
 .snake-game-grid {
-  width: 302px;
-  height: 302px;
+  width: 304px;
+  height: 304px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   padding: 0 !important;
+  border: 2px solid #444444;
 }
 
 .snake-game-grid div {
   width: 15px;
   height: 15px;
-  border: 1px solid green;
+  border: 1px solid #333333;
 }
 
 .snake-game-instructions {
@@ -125,9 +126,9 @@ a {
 }
 
 .game-over {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 40%;
+  top: 46%;
+  transform: translate(-30%, -50%);
   font-family: JetBrains Mono;
   color: #dddddd;
   border: none;

@@ -16,16 +16,23 @@
         <div class="row">
           <div id="snake-game-grid" class="snake-game-grid"></div>
         </div>
-        <div class="row">
-          <div class="col">
-            CURRENT: <span id="score">0</span>
+        <div class="col d-flex justify-content-center mt-2">
+          <div class="row text-center" style="width: 305px;">
+            <div class="col">
+              SCORE: <span id="score">0</span>
+            </div>
+            <div class="col">
+              BEST: <span id="best-score">0</span>
+            </div>
           </div>
-          <div class="col">
-            BEST: <span id="best-score">0</span>
+        </div>
+        <div class="row mt-2">
+          <div>
+            SPEED: <span id="current-speed">100</span>%
           </div>
         </div>
         <div id="snake-game-instructions" class="position-absolute snake-game-instructions text-start p-3">
-          Welcome, weary traveler. Take a break and play a few rounds of the classic game Snake. Can you make it to the high score list?<br/><br/>
+          Welcome, weary traveler. Take a break and play a few rounds of the classic game Snake.<br/><br/>
           <div class="text-center">INSTRUCTIONS:</div>
           - Use the arrow keys to move<br/>
           - Don't hit the walls or yourself<br/>
@@ -37,12 +44,7 @@
         <div id="game-over" class="position-absolute game-over p-4 px-5" style="display: none;">
           GAME OVER<br/><br/>
           <div class="text-center">
-            Your Score: <span id="score">0</span><br/><br/>
-
-            High Scores:<br/>
-            1. 32 - Rob<br/>
-            2. 22 - Rob<br/>
-            3. 21 - Rob<br/>
+            Your Score: <span id="last-score">0</span><br/><br/>
           </div>
           <div class="text-center mt-3">
             <button id="snake-restart-btn" type="button">PLAY AGAIN</button>
