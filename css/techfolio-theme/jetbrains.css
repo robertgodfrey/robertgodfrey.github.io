@@ -81,7 +81,7 @@ a {
   height: 10px;
 }
 
-.snek-button {
+.snek-button-text {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -93,6 +93,53 @@ a {
 
 .snake {
   background: #619652;
+}
+
+.apple {
+  background: red;
+}
+
+.snake-game-grid {
+  width: 302px;
+  height: 302px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+
+.snake-game-grid div {
+  width: 15px;
+  height: 15px;
+  border: 1px solid green;
+}
+
+.snake-game-instructions {
+  left: 15%;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  font-family: JetBrains Mono;
+  color: #dddddd;
+  border: none;
+  background: #00000050;
+}
+
+.game-over {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: JetBrains Mono;
+  color: #dddddd;
+  border: none;
+  background: #00000050;
+}
+
+#snake-start-btn:hover {
+  opacity: 70%;
+}
+
+#snake-restart-btn:hover {
+  opacity: 70%;
 }
 
 @media (min-width: 700px) {
