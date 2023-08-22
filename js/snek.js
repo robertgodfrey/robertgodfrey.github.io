@@ -2,7 +2,6 @@ const snekButtonGrid = document.getElementById('snek-button-bg');
 const snekGameGrid = document.getElementById('snake-game-grid');
 const buttonSnake = [6, 5, 4, 3, 2, 1, 0];
 const buttonWidth = 20;
-const buttonHeight = 5;
 const width = 20;
 const height = 20;
 
@@ -14,6 +13,19 @@ let interval;
 let intervalTime = 200;
 let score = 0;
 let bestScore = 0;
+
+let highScoresStr;
+let highScores = [];
+
+async function getHighScores() {
+  const response = await fetch('https://stepnsidekick.com/scores.json');
+  const scores = await response.json();
+  Object.keys(scores).forEach((score) => highScores.append(score));
+  highScoresStr = `1. ${highScores[0]} - ${scores[highScores[0]]}`;
+  highScoresStr += `\n2. ${highScores[1]} - ${scores[highScores[1]]}`;
+  highScoresStr += `\n3. ${highScores[2]} - ${scores[highScores[2]]}`;
+  console.log(highScores);
+}
 
 function moveSnakeButton(squares) {
   let tail = buttonSnake.pop();
@@ -110,6 +122,7 @@ function moveSnake(squares) {
   if (hit(squares)) {
     // game over
     document.getElementById('game-over').style.display = 'inline';
+    document.getElementById('high-scores').innerHTML = highScoresStr;
     document.getElementById('last-score').innerHTML = score;
     clearInterval(interval);
     document.addEventListener('keydown', enterToRestart);
@@ -183,16 +196,6 @@ function restartGame() {
   startGame();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  for (let i = 0; i < 100; i++) {
-    snekButtonGrid.append(document.createElement('div'));
-  }
-  const squares = document.querySelectorAll('.snek-button-board div');
-  buttonSnake.forEach((index) => squares[index].classList.add('snake'));
-
-  interval = setInterval(moveSnakeButton, 200, squares);
-});
-
 snekButtonGrid.onclick = () => {
   // stop button animation, show game board
   document.getElementById('pic-snake-button').style.display = 'none';
@@ -245,3 +248,14 @@ document.getElementById('down-arrow').onclick = () => {
   prevDirection = direction;
   direction = +width; // down 20 divs
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  getHighScores();
+  for (let i = 0; i < 100; i++) {
+    snekButtonGrid.append(document.createElement('div'));
+  }
+  const squares = document.querySelectorAll('.snek-button-board div');
+  buttonSnake.forEach((index) => squares[index].classList.add('snake'));
+
+  interval = setInterval(moveSnakeButton, 200, squares);
+});
