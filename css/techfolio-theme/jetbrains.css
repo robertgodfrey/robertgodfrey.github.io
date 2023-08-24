@@ -122,17 +122,48 @@ a {
   font-family: JetBrains Mono;
   color: #dddddd;
   border: none;
-  background: #00000050;
+  background: #00000070;
 }
 
 .game-over {
   left: 40%;
   top: 46%;
-  transform: translate(-30%, -50%);
+  transform: translate(-36.5%, -50%);
   font-family: JetBrains Mono;
   color: #dddddd;
   border: none;
-  background: #00000050;
+  background: #00000070;
+}
+
+.high-score {
+  left: 40%;
+  top: 46%;
+  transform: translate(-35%, -50%);
+  font-family: JetBrains Mono;
+  color: #dddddd;
+  border: none;
+  background: #000000CC;
+}
+
+.loader-hidden {
+  display: none;
+}
+
+.loader {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  border: 5px solid #dedede;
+  border-top: 5px solid #79b1e8;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .mobile-arrow-btn {

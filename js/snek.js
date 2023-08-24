@@ -14,17 +14,43 @@ let intervalTime = 200;
 let score = 0;
 let bestScore = 0;
 
-let highScoresStr;
+let highScoreOne, highScoreTwo, highScoreThree;
 let highScores = [];
 
 async function getHighScores() {
-  const response = await fetch('https://stepnsidekick.com/scores.json');
+  const response = await fetch('https://nw3wvp7zk7zlvqctaqes5xs7ji0enbih.lambda-url.us-east-1.on.aws');
   const scores = await response.json();
-  Object.keys(scores).forEach((score) => highScores.append(score));
-  highScoresStr = `1. ${highScores[0]} - ${scores[highScores[0]]}`;
-  highScoresStr += `\n2. ${highScores[1]} - ${scores[highScores[1]]}`;
-  highScoresStr += `\n3. ${highScores[2]} - ${scores[highScores[2]]}`;
-  console.log(highScores);
+  Object.keys(scores).forEach((score) => highScores.push(score));
+  highScores = highScores.reverse();
+  highScoreOne = `${highScores[0]} - ${scores[highScores[0]]}`;
+  highScoreTwo = `${highScores[1]} - ${scores[highScores[1]]}`;
+  highScoreThree = `${highScores[2]} - ${scores[highScores[2]]}`;
+}
+
+async function postScore(e) {
+  document.getElementById('high-score').style.display = 'none';
+  document.getElementById('loader').classList.add('loader');
+  document.getElementById('loader').classList.remove('loader-hidden');
+  document.getElementById('high-score-1').innerHTML = '';
+  document.getElementById('high-score-2').innerHTML = '';
+  document.getElementById('high-score-3').innerHTML = '';
+  const response = await fetch('https://nq3q5hwyijmmfhbjcgbt6v57hm0wbkqj.lambda-url.us-east-1.on.aws/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: `${document.getElementById('highScoreName').value}~*&*~${score}`,
+  });
+  const scores = await response.json();
+  Object.keys(scores).forEach((score) => highScores.push(score));
+  highScores = highScores.reverse();
+  highScoreOne = `${highScores[0]} - ${scores[highScores[0]]}`;
+  highScoreTwo = `${highScores[1]} - ${scores[highScores[1]]}`;
+  highScoreThree = `${highScores[2]} - ${scores[highScores[2]]}`;
+  document.getElementById('high-score-1').innerHTML = highScoreOne;
+  document.getElementById('high-score-2').innerHTML = highScoreTwo;
+  document.getElementById('high-score-3').innerHTML = highScoreThree;
+
+  document.getElementById('loader').classList.add('loader-hidden');
+  document.getElementById('loader').classList.remove('loader');
 }
 
 function moveSnakeButton(squares) {
@@ -112,20 +138,31 @@ function eatApple(squares, tail) {
     }
     document.getElementById('score').innerHTML = score;
     clearInterval(interval);
-    intervalTime = intervalTime * 0.95;
+    if (intervalTime > 72) {
+      intervalTime = intervalTime * 0.95;
+      document.getElementById('current-speed').innerHTML = Math.round(200 / intervalTime * 35);
+    } else if (Math.round(intervalTime) === 72) {
+      intervalTime = 70;
+      document.getElementById('current-speed').innerHTML = 100;
+    }
     interval = setInterval(moveSnake, intervalTime, squares);
-    document.getElementById('current-speed').innerHTML = Math.round(200 / intervalTime * 100);
   }
 }
 
 function moveSnake(squares) {
   if (hit(squares)) {
     // game over
-    document.getElementById('game-over').style.display = 'inline';
-    document.getElementById('high-scores').innerHTML = highScoresStr;
-    document.getElementById('last-score').innerHTML = score;
     clearInterval(interval);
+    if (score > 0) {// highScores[2]) {
+      document.getElementById('high-score').style.display = 'inline';
+    }
+    document.getElementById('game-over').style.display = 'inline';
+    document.getElementById('high-score-1').innerHTML = highScoreOne;
+    document.getElementById('high-score-2').innerHTML = highScoreTwo;
+    document.getElementById('high-score-3').innerHTML = highScoreThree;
+    document.getElementById('last-score').innerHTML = score;
     document.addEventListener('keydown', enterToRestart);
+    document.removeEventListener('keydown', control);
   } else {
     let tail = snake.pop();
     squares[tail].classList.remove('snake');
@@ -192,7 +229,7 @@ function restartGame() {
   snake = [2, 1, 0];
   score = 0;
   document.getElementById('score').innerHTML = 0;
-  document.getElementById('current-speed').innerHTML = 100;
+  document.getElementById('current-speed').innerHTML = 35;
   startGame();
 }
 
@@ -210,6 +247,7 @@ snekButtonGrid.onclick = () => {
 document.getElementById('snake-start-btn').onclick = () => {
   document.getElementById('snake-game-instructions').style.display = 'none';
   startGame();
+  getHighScores();
 }
 
 document.getElementById('snake-restart-btn').onclick = () => {
@@ -225,7 +263,6 @@ document.getElementById('left-arrow').onclick = () => {
 }
 
 document.getElementById('up-arrow').onclick = () => {
-  console.log('up?');
   if (direction === width) {
     return;
   }
@@ -250,7 +287,6 @@ document.getElementById('down-arrow').onclick = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  getHighScores();
   for (let i = 0; i < 100; i++) {
     snekButtonGrid.append(document.createElement('div'));
   }
