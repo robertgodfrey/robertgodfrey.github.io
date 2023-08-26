@@ -153,7 +153,7 @@ function moveSnake(squares) {
   if (hit(squares)) {
     // game over
     clearInterval(interval);
-    if (score > 0) {// highScores[2]) {
+    if (score > highScores[2]) {
       document.getElementById('high-score').style.display = 'inline';
     }
     document.getElementById('game-over').style.display = 'inline';
