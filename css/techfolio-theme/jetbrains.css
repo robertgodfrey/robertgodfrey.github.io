@@ -116,9 +116,11 @@ a {
 }
 
 .snake-game-instructions {
+  width: 345px;
   left: 15%;
   top: 50%;
   transform: translate(-10%, -50%);
+  -moz-transform: translate(8%, 8%);
   font-family: JetBrains Mono;
   color: #dddddd;
   border: none;
@@ -129,6 +131,7 @@ a {
   left: 40%;
   top: 46%;
   transform: translate(-36.5%, -50%);
+  -moz-transform: translate(16%, -125%);
   font-family: JetBrains Mono;
   color: #dddddd;
   border: none;
@@ -139,6 +142,7 @@ a {
   left: 40%;
   top: 46%;
   transform: translate(-35%, -50%);
+  -moz-transform: translate(30%, -125%);
   font-family: JetBrains Mono;
   color: #dddddd;
   border: none;
