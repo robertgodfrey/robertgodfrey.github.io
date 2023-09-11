@@ -81,16 +81,6 @@ a {
   height: 10px;
 }
 
-.snek-button-text {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: JetBrains Mono;
-  color: #dddddd;
-  border: none;
-  background: transparent;
-}
-
 .snake {
   background: #619652;
 }
