@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Autonomous Electric Vehicle System | Robert Godfrey | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="/img/pfp.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Robert Godfrey | Professional Portfolio">
+    <meta property="og:url" content="https://robertgodfrey.github.io/projects/aevs.html">
+    <meta property="og:title" content="Autonomous Electric Vehicle System | Robert Godfrey | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/img/pfp.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/jetbrains.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/base16.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Autonomous Electric Vehicle System | Robert Godfrey | Professional Portfolio</title>
+  </head>
+  <body style="background-color: #2b2b2b; color: #dddddd;">
+  <header class="navbar navbar-expand border-bottom">
+  <div class="container-fluid">
+    <a class="nav-link ms-3" href="/" style="font-size: 20px;">Robert Godfrey</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link mx-2" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h2 class="display-5" style="font-weight: 400">Autonomous Electric Vehicle System</h2>
+ <div class="col d-flex justify-content-center my-4 pb-2">
+  <img width="75%" class="shadow" src="../img/aevs/control-center.png" alt="AEVS control center" />
+</div>
+
+<p><img width="350px" class="float-end" hspace="10px" src="../img/aevs/aev-mockup.png" alt="AEVS mockup" /></p>
+
+<p>The Autonomous Electric Vehicle System (AEVS) is a Vertically Integrated Project (VIP) for the College of Engineering at the University of Hawai’i at Manoa. VIPs are run by of a team of senior mechanical engineering students who work together on a capstone project in their final year of undergraduate study. These teams are augmented by volunteers from other majors including electrical engineering, computer engineering, and computer science.</p>
+
+<p>The AEVS project’s goal is fully autonomous delivery of packages around the UH Manoa campus. This year’s AEVS team essentially redesigned and rebuilt the entire robot from scratch, keeping only minor details from the previous year’s team. I joined the team midway through spring semester and was the only computer science major on the team, despite the fact that the project heavily relies on advanced computer science concepts such as artificial intelligence and computer vision.</p>
+
+<p>The software side of the AEVS is broken up into three major components:</p>
+<ul>
+  <li><a href="https://uhm-aevs.online">The user website</a>, where users can schedule/modify deliveries and issue simple commands to the AEV such as opening and closing the door. This application was built using Node.js, Express, and MongoDB.</li>
+  <li><a href="https://uhm-aevs.online:3000">The control center</a>, where team members can monitor AEV status and manually control the AEV if necessary. This application was also built with Node.js and Express.</li>
+  <li>The code running on the AEV (a <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-tx2/">NVIDIA Jetson TX2</a>). This code was primarily written in Python and uses NVIDA’s AI libraries for object detection and avoidance. It also serves a Flask application for streaming video, relaying telemetry data, and receiving remote commands.</li>
+</ul>
+
+<p><br /></p>
+<div class="col d-flex justify-content-center mt-3">
+  <img width="75%" class="shadow" src="../img/aevs/logic.png" alt="AEVS control center" />
+</div>
+<div class="col text-center px-5 mt-2">
+  An overview of how the three software systems communicate with each other.
+</div>
+<p><br />
+As the only computer science major on the team, I was responsible for writing nearly all of the code for the AEVS. I started by building the user website and the control center. Once the other team members had made enough progress building the AEV, I was able to begin working on the AEV’s code and testing mechanical functions such as motor controls, linear actuators, warning lights, sound, telemetry, and object detection. These functions were integrated using various tools including <a href="https://www.phidgets.com/">Phidgets</a>, the <a href="https://github.com/NVIDIA/jetson-gpio">Jetson General Purpose I/O</a> (GPIO) library, and  Serial Protocol Interface (SPI) .</p>
+
+<p>There was a lot for me to learn on this project. While I had developed web applications before, this was my first time using Node.js and Express.js. Throughout the development of these applications, I was able to learn more about HTTP methods, routes, and how to set up my own APIs. This was also my first time programming an embedded system, which I thoroughly enjoyed and would like to try again in the future.</p>
+
+<p>I joined quite late in the project and I was not able to achieve the goals that the team had, namely autonomy. If I am able to work on this project again next year, I would like to start developing the software as soon as possible - specifically computer vision. I would also like to implement Socket.IO as the communication channel between the AEV and the control center rather than HTTP, which would help ensure constant communication between the two systems. While there was not enough time to complete every goal we had for the project, I am still proud of what we accomplished and I was grateful for the opportunity to learn more about programming embedded systems.</p>
+
+<div class="row mt-4">
+  <div class="col d-flex justify-content-center">
+    <img height="500px" src="../img/aevs/door-opening.gif" alt="AEV door opening" />
+  </div>
+  <div class="col d-flex justify-content-center">
+    <img height="500px" src="../img/aevs/driving.gif" alt="AEV in operation" />
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col text-center px-5">
+    Linear actuators opening the AEV's door (command received remotely from the user website)
+  </div>
+  <div class="col text-center px-5">
+    The AEV in operation (remotely controlled via the command center website)
+  </div>
+</div>
+
+<p><br /></p>
+<p style="text-align:center;">
+  <a href="https://github.com/ME-481-AEVS" target="_blank">GitHub Organization</a>
+</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-darkborder-top footer">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

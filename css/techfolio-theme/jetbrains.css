@@ -1,0 +1,212 @@
+/* Rubik Theme: modifies the default theme to use the chunkier Rubik for the header fonts. */
+
+/* Use Open Sans as the default font and Roboto for headlines */
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
+
+/* See https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables for variables to override. */
+:root {
+  --bs-font-sans-serif: "Open Sans", sans-serif;
+  --bs-link-color: #53b7db;
+  --bs-link-hover-color: #96cde0;
+  --tf-pill-bg: #222222;
+  --tf-icon-fill: var(--bs-gray);
+  --tf-page-bg-color: var(--bs-white);
+  --tf-footer-bg-color: var(--bs-gray-200);
+  --tf-projects-bg-color: var(--bs-gray-100);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: Open Sans;
+}
+
+/* Format social media icons */
+.tf-social {
+  display: inline-block;
+  fill: #888888;
+  height: 1.2em;
+  vertical-align: -.1em;
+  width: 1.2em;
+  transition: 0.3s;
+}
+
+.tf-social:hover {
+  fill: #cccccc;
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  --bs-nav-link-color: white;
+  --bs-nav-link-hover-color: #9aacb7;
+  font-weight: 500;
+}
+
+.navbar {
+  background: #3c3f41;
+  --bs-border-color: #222222;
+  --bs-border-radius: 3px;
+}
+
+.footer {
+  background: #262626;
+  --bs-border-color: #1f1f1f;
+  --bs-border-radius: 3px;
+}
+
+.snek-button-board {
+  width: 202px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 50%;
+  padding: 0 !important;
+  transition: 0.3s;
+}
+
+.snek-button-board:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.snek-button-board div {
+  width: 10px;
+  height: 10px;
+}
+
+.snake {
+  background: #619652;
+}
+
+.apple {
+  background: red;
+}
+
+.snake-game-grid {
+  width: 304px;
+  height: 304px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 !important;
+  border: 2px solid #444444;
+}
+
+.snake-game-grid div {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #333333;
+}
+
+.snake-game-instructions {
+  width: 345px;
+  left: 15%;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  -moz-transform: translate(8%, 8%);
+  font-family: JetBrains Mono;
+  color: #dddddd;
+  border: none;
+  background: #00000070;
+}
+
+.game-over {
+  left: 40%;
+  top: 46%;
+  transform: translate(-36.5%, -50%);
+  -moz-transform: translate(16%, -125%);
+  font-family: JetBrains Mono;
+  color: #dddddd;
+  border: none;
+  background: #00000070;
+}
+
+.high-score {
+  left: 40%;
+  top: 46%;
+  transform: translate(-35%, -50%);
+  -moz-transform: translate(30%, -125%);
+  font-family: JetBrains Mono;
+  color: #dddddd;
+  border: none;
+  background: #000000CC;
+}
+
+.loader-hidden {
+  display: none;
+}
+
+.loader {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  border: 5px solid #dedede;
+  border-top: 5px solid #79b1e8;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mobile-arrow-btn {
+  width: 40px;
+  height: 40px;
+  background: #3c3f41;
+  color: #cccccc;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+#snake-start-btn:hover {
+  opacity: 70%;
+}
+
+#snake-restart-btn:hover {
+  opacity: 70%;
+}
+
+@media (min-width: 700px) {
+  .lineNums {
+    width: 40px;
+  }
+  #ide {
+    padding-left: 20px;
+  }
+  .pushRight {
+    padding-left: 2rem;
+  }
+  #mobile-controls {
+    display: none;
+  }
+}
+
+@media (max-width: 699px) {
+  .lineNums {
+    height: 0;
+    visibility: hidden;
+  }
+  #undergrad {
+    width: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+}
+
+/* Simplify the styling of the bottom of Essay cards. */
+.card-footer {
+  background-color: #2e3032;
+  border-top: none;
+}
