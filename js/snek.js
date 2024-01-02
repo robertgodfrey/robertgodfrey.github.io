@@ -49,6 +49,8 @@ async function postScore(e) {
   document.getElementById('high-score-2').innerHTML = highScoreTwo;
   document.getElementById('high-score-3').innerHTML = highScoreThree;
 
+  document.addEventListener('keydown', enterToRestart);
+
   document.getElementById('loader').classList.add('loader-hidden');
   document.getElementById('loader').classList.remove('loader');
 }
@@ -154,14 +156,15 @@ function moveSnake(squares) {
     // game over
     clearInterval(interval);
     if (score > highScores[2]) {
-      document.getElementById('high-score').style.display = 'inline';
+      document.getElementById('high-score').style.display = 'block';
+    } else {
+      document.addEventListener('keydown', enterToRestart);
     }
-    document.getElementById('game-over').style.display = 'inline';
+    document.getElementById('game-over').style.display = 'block';
     document.getElementById('high-score-1').innerHTML = highScoreOne;
     document.getElementById('high-score-2').innerHTML = highScoreTwo;
     document.getElementById('high-score-3').innerHTML = highScoreThree;
     document.getElementById('last-score').innerHTML = score;
-    document.addEventListener('keydown', enterToRestart);
     document.removeEventListener('keydown', control);
   } else {
     let tail = snake.pop();
@@ -236,7 +239,7 @@ function restartGame() {
 snekButtonGrid.onclick = () => {
   // stop button animation, show game board
   document.getElementById('pic-snake-button').style.display = 'none';
-  document.getElementById('snake-game').style.display = 'inline';
+  document.getElementById('snake-game').style.display = 'block';
   clearInterval(interval);
 
   for (let i = 0; i < 400; i++) {
@@ -284,6 +287,14 @@ document.getElementById('down-arrow').onclick = () => {
   }
   prevDirection = direction;
   direction = +width; // down 20 divs
+}
+
+document.getElementById('snake-bg').onclick = () => {
+  // hide snake game
+  document.getElementById('pic-snake-button').style.display = 'block';
+  document.getElementById('snake-game').style.display = 'none';
+  const squares = document.querySelectorAll('.snek-button-board div');
+  interval = setInterval(moveSnakeButton, 200, squares);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

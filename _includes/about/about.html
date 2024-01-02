@@ -1,48 +1,43 @@
-<div style="background-color: #2b2b2b" class="container py-4 mt-3">
-  <div class="row pushRight">
-    <div class="col-lg-4 mt-2">
-      <div id="pic-snake-button">
-        <img width="300px" src="{{ site.data.bio.basics.picture }}" class="d-block mx-auto rounded" alt="Rob's profile picture">
-        <div class="row mx-5 mt-2">
-          <div id="snek-button-bg" class="snek-button-board position-relative"></div>
+<div id="snake-game" class="position-fixed top-0 left-0 w-100" style="min-height: 100vh; z-index: 50; display: none;">
+  <div id="snake-bg" class="bg-black w-100 position-fixed" style="min-height: 100vh; opacity: 50%;"></div>
+  <div class="d-flex justify-content-center" style="min-height: 100vh;">
+    <div style="font-family: JetBrains Mono; background-color: #2b2b2b; min-width: 390px;" class="text-center position-relative py-3 my-auto rounded">
+      <div style="font-size: 1.5rem;">
+        SNAKE
+      </div>
+      <div class="row">
+        <div id="snake-game-grid" class="snake-game-grid"></div>
+      </div>
+      <div class="col d-flex justify-content-center mt-2">
+        <div class="row text-center" style="width: 305px;">
+          <div class="col">
+            SCORE: <span id="score">0</span>
+          </div>
+          <div class="col">
+            BEST: <span id="best-score">0</span>
+          </div>
         </div>
       </div>
-      <div id="snake-game" style="display: none; font-family: JetBrains Mono;" class="text-center position-relative">
-        <div class="" style="font-size: 1.5rem;">
-          SNAKE
+      <div class="row mt-2">
+        <div>
+          SPEED: <span id="current-speed">35</span>%
         </div>
+      </div>
+      <div id="mobile-controls" class="mt-2">
+        <button type="button" id="up-arrow" class="mobile-arrow-btn">↑</button>
         <div class="row">
-          <div id="snake-game-grid" class="snake-game-grid"></div>
-        </div>
-        <div class="col d-flex justify-content-center mt-2">
-          <div class="row text-center" style="width: 305px;">
-            <div class="col">
-              SCORE: <span id="score">0</span>
-            </div>
-            <div class="col">
-              BEST: <span id="best-score">0</span>
-            </div>
+          <div class="col">
+            <button type="button" id="left-arrow" class="mobile-arrow-btn">←</button>
+          </div>
+          <div class="col"></div>
+          <div class="col">
+            <button type="button" id="right-arrow" class="mobile-arrow-btn">→</button>
           </div>
         </div>
-        <div class="row mt-2">
-          <div>
-            SPEED: <span id="current-speed">35</span>%
-          </div>
-        </div>
-        <div id="mobile-controls" class="mt-2">
-          <button type="button" id="up-arrow" class="mobile-arrow-btn">↑</button>
-          <div class="row">
-            <div class="col">
-              <button type="button" id="left-arrow" class="mobile-arrow-btn">←</button>
-            </div>
-            <div class="col"></div>
-            <div class="col">
-              <button type="button" id="right-arrow" class="mobile-arrow-btn">→</button>
-            </div>
-          </div>
-          <button type="button" id="down-arrow" class="mobile-arrow-btn">↓</button>
-        </div>
-        <div id="snake-game-instructions" class="position-absolute snake-game-instructions text-start p-3">
+        <button type="button" id="down-arrow" class="mobile-arrow-btn">↓</button>
+      </div>
+      <div id="snake-game-instructions" class="position-absolute top-0 left-0 w-100 h-100" style="z-index: 57">
+        <div class="text-start p-3 m-auto mt-5">
           Welcome, weary traveler. Take a break and play a few rounds of the classic game Snake.<br/><br/>
           <div class="text-center">INSTRUCTIONS:</div>
           - Use the arrow keys or WASD to move<br/>
@@ -52,7 +47,9 @@
             <button id="snake-start-btn" type="button">START</button>
           </div>
         </div>
-        <div id="game-over" class="position-absolute game-over p-4" style="display: none; width: 305px;">
+      </div>
+      <div id="game-over" class="position-absolute top-0 left-0 w-100 h-100" style="z-index: 55; display: none;">
+        <div class="p-4 m-auto mt-5" style="width: 305px;">
           GAME OVER<br/><br/>
           <div class="text-center">
             Your Score: <span id="last-score">0</span><br/><br/>
@@ -61,79 +58,79 @@
           <div id="high-score-1">1. N/A</div>
           <div id="high-score-2">2. N/A</div>
           <div id="high-score-3">3. N/A</div>
+          <div id="loader" class="loader-hidden mx-auto mt-3"></div>
           <div class="text-center mt-3">
             <button id="snake-restart-btn" type="button">PLAY AGAIN</button>
           </div>
         </div>
-        <div id="high-score" class="position-absolute high-score p-4" style="display: none; width: 250px;">
+      </div>
+      <div id="high-score" class="position-absolute top-0 left-0 w-100 h-100" style="z-index: 56; display: none;">
+        <div class="p-4 m-auto mt-5" style="width: 250px;">
           HIGH SCORE<br/><br/>
           <div class="text-center">
             You made the high score list! Enter your name and your score will be saved.
           </div>
           <form onsubmit="postScore()" action="javascript:;" method="POST" autocomplete="off">
-            <input id="highScoreName" class="mt-2" name="name" type="text">
+            <input id="highScoreName" class="mt-2 w-100" name="name" type="text">
             <input class="mt-2" type="submit" value="Save">
           </form>
         </div>
-        <div id="loader" class="loader-hidden"></div>
       </div>
     </div>
-    <div id="ide" class="col-lg-8" style="font-size: 18px;">
-      <div class="row">
-        <div class="lineNums my-3">
-          <span style="color: #5b5b5b;">1<span style="color: #2b2b2b; font-size: 2rem;"></span></span><br />
-          <span class="mt-2" style="color: #555555;">2</span><br/>
-          <span style="color: #4b4b4b;">3</span><br/>
-          <span style="color: #444444;">4</span><br/>
-          <span style="color: #3b3b3b;">5</span><br />
-          <span class="mt-2" style="color: #333333;">6</span><br />
-          <span class="mt-2" style="color: #2f2f2f;">7</span>
-        </div>
-        <div class="col my-3" style="font-family: JetBrains Mono;">
-          <span style="color: #cb6f2e;">def&nbsp;</span><span style="color: #ffc66d; font-size: 2rem;">robert_godfrey</span><span id="undergrad" style="color: #a9b7c6;">()</span><span style="color: #a9b7c6;">:</span>
-          <br />
-          <span class="ms-5" style="color: #619652">"""</span><br/>
-          <p class="ms-5 m-0 p-0" style="color: #619652;">
-            <span id="bio">I am an undergraduate computer science student at the University of Hawai‘i at Mānoa.</span><span id="cursor1" style="color: #777777; border: solid 1px"></span>
-          </p>
-          <span class="ms-5" style="color: #619652;">
-            <span id="bottomQuotes">"""</span><span id="cursor2" style="color: #777777; border: solid 1px; visibility: hidden"></span>
-          </span>
-          <p class="ms-5 m-0 p-0">
-            <span id="interestsStart" style="color: #a9b7c6;"></span><span id="openingBracket" style="color: #a9b7c6;"></span><span id="appDev" style="color: #619652"></span><span id="comma1" style="color: #cb6f2e;"></span><span id="crypto" style="color: #619652;"></span><span id="comma2" style="color: #cb6f2e;"></span><span id="augment" style="color: #619652;"></span><span id="quote" style="color: #619652;"></span><span id="cursor3" style="color: #777777; border: solid 1px; visibility: hidden"></span><span id="closingBracket" style="color: #a9b7c6; visibility: hidden;">]</span>
-          </p>
+  </div>
+</div>
+<div style="background-color: #2b2b2b" class="container py-4 mt-3">
+  <div id="ide" class="mx-5 px-4" style="font-size: 18px;">
+    <div class="row">
+      <div class="lineNums my-3">
+        <span style="color: #5b5b5b;">1<span style="color: #2b2b2b; font-size: 2rem;"></span></span><br />
+        <span class="mt-2" style="color: #555555;">2</span><br/>
+        <span style="color: #4b4b4b;">3</span><br/>
+        <span style="color: #444444;">4</span><br/>
+        <span style="color: #3b3b3b;">5</span><br />
+        <span class="mt-2" style="color: #333333;">6</span><br />
+        <span class="mt-2" style="color: #2f2f2f;">7</span>
+      </div>
+      <div class="col my-3" style="font-family: JetBrains Mono;">
+        <span style="color: #cb6f2e;">def&nbsp;</span><span style="color: #ffc66d; font-size: 2rem;">robert_godfrey</span><span id="undergrad" style="color: #a9b7c6;">()</span><span style="color: #a9b7c6;">:</span>
+        <br />
+        <span class="ms-5" style="color: #619652">"""</span><br/>
+        <p class="ms-5 m-0 p-0" style="color: #619652;">
+          <span id="bio">I am an undergraduate computer science student at the University of Hawai‘i at Mānoa.</span><span id="cursor1" style="color: #777777; border: solid 1px"></span>
+        </p>
+        <span class="ms-5" style="color: #619652;">
+          <span id="bottomQuotes">"""</span><span id="cursor2" style="color: #777777; border: solid 1px; visibility: hidden"></span>
+        </span>
+        <p class="ms-5 m-0 p-0">
+          <span id="interestsStart" style="color: #a9b7c6;"></span><span id="openingBracket" style="color: #a9b7c6;"></span><span id="appDev" style="color: #619652"></span><span id="comma1" style="color: #cb6f2e;"></span><span id="crypto" style="color: #619652;"></span><span id="comma2" style="color: #cb6f2e;"></span><span id="augment" style="color: #619652;"></span><span id="quote" style="color: #619652;"></span><span id="cursor3" style="color: #777777; border: solid 1px; visibility: hidden"></span><span id="closingBracket" style="color: #a9b7c6; visibility: hidden;">]</span>
+        </p>
+      </div>
+    </div>
+    <hr class="mt-4 mb-0" style="color: #555555; border-top: 2px solid" />
+    <div class="row" style="font-size: 1.2rem;">
+      <div class="col">
+        <div id="pic-snake-button">
+          <div class="row mx-5 mt-2">
+            <div id="snek-button-bg" class="snek-button-board position-relative"></div>
+          </div>
         </div>
       </div>
-      <hr class="my-4 pushRight" style="color: #555555; border-top: 2px solid" />
-      <div class="row pushRight" style="font-size: 1.2rem;">
-        <div class="col text-center mt-2">
-          <a href="{{ '/' | prepend: site.baseurl }}">
-            <svg class="tf-social">
-              <use xlink:href="/img/bootstrap-icons.svg#house-fill"/>
-            </svg>
-          </a>
-        </div>
-        <div class="col text-center mt-2">
-          <a href="mailto:rob_godfrey@outlook.com">
-            <svg class="tf-social">
-              <use xlink:href="/img/bootstrap-icons.svg#envelope-fill"/>
-            </svg>
-          </a>
-        </div>
-        <div class="col text-center mt-2">
-          <a href="https://github.com/robertgodfrey" target="_blank">
-            <svg class="tf-social">
-              <use xlink:href="/img/bootstrap-icons.svg#github"/>
-            </svg>
-          </a>
-        </div>
-        <div class="col text-center mt-2">
-          <a href="https://www.linkedin.com/in/bob-godfrey" target="_blank">
-            <svg class="tf-social">
-              <use xlink:href="/img/bootstrap-icons.svg#linkedin"/>
-            </svg>
-          </a>
-        </div>
+      <div class="col text-end mt-4">
+        <a href="mailto:rob_godfrey@outlook.com" class="me-4">
+          <svg class="tf-social">
+            <use xlink:href="/img/bootstrap-icons.svg#envelope-fill"/>
+          </svg>
+        </a>
+        <a href="https://github.com/robertgodfrey" target="_blank" class="me-4">
+          <svg class="tf-social">
+            <use xlink:href="/img/bootstrap-icons.svg#github"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/bob-godfrey" target="_blank">
+          <svg class="tf-social">
+            <use xlink:href="/img/bootstrap-icons.svg#linkedin"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>

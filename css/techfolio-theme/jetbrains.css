@@ -66,7 +66,7 @@ a {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  opacity: 50%;
+  opacity: 30%;
   padding: 0 !important;
   transition: 0.3s;
 }
@@ -89,7 +89,7 @@ a {
   background: red;
 }
 
-.snake-game-grid {
+#snake-game-grid {
   width: 304px;
   height: 304px;
   margin: 0 auto;
@@ -99,42 +99,13 @@ a {
   border: 2px solid #444444;
 }
 
-.snake-game-grid div {
+#snake-game-grid div {
   width: 15px;
   height: 15px;
   border: 1px solid #333333;
 }
 
-.snake-game-instructions {
-  width: 345px;
-  left: 15%;
-  top: 50%;
-  transform: translate(-10%, -50%);
-  -moz-transform: translate(8%, 8%);
-  font-family: JetBrains Mono;
-  color: #dddddd;
-  border: none;
-  background: #00000070;
-}
-
-.game-over {
-  left: 40%;
-  top: 46%;
-  transform: translate(-36.5%, -50%);
-  -moz-transform: translate(16%, -125%);
-  font-family: JetBrains Mono;
-  color: #dddddd;
-  border: none;
-  background: #00000070;
-}
-
-.high-score {
-  left: 40%;
-  top: 46%;
-  transform: translate(-35%, -50%);
-  -moz-transform: translate(30%, -125%);
-  font-family: JetBrains Mono;
-  color: #dddddd;
+#high-score {
   border: none;
   background: #000000CC;
 }
@@ -144,14 +115,11 @@ a {
 }
 
 .loader {
-  position: absolute;
-  left: 45%;
-  top: 50%;
+  width: 40px;
+  height: 40px;
   border: 5px solid #dedede;
   border-top: 5px solid #79b1e8;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
   animation: spin 1s linear infinite;
 }
 
@@ -176,6 +144,20 @@ a {
 
 #snake-restart-btn:hover {
   opacity: 70%;
+}
+
+#snake-game-instructions {
+  width: 345px;
+  font-family: JetBrains Mono;
+  color: #dddddd;
+  border: none;
+  background: #00000070;
+}
+
+#game-over {
+  color: #dddddd;
+  border: none;
+  background: #00000070;
 }
 
 @media (min-width: 700px) {
