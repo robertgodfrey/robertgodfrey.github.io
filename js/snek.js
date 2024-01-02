@@ -9,7 +9,8 @@ let snake = [2, 1, 0];
 let appleIndex;
 let direction = 1;
 let prevDirection = 1; // to account for fast pressing
-let interval;
+let buttonInterval;
+let gameInterval;
 let intervalTime = 200;
 let score = 0;
 let bestScore = 0;
@@ -139,7 +140,7 @@ function eatApple(squares, tail) {
       document.getElementById('best-score').innerHTML = score;
     }
     document.getElementById('score').innerHTML = score;
-    clearInterval(interval);
+    clearInterval(gameInterval);
     if (intervalTime > 72) {
       intervalTime = intervalTime * 0.95;
       document.getElementById('current-speed').innerHTML = Math.round(200 / intervalTime * 35);
@@ -147,14 +148,14 @@ function eatApple(squares, tail) {
       intervalTime = 70;
       document.getElementById('current-speed').innerHTML = 100;
     }
-    interval = setInterval(moveSnake, intervalTime, squares);
+    gameInterval = setInterval(moveSnake, intervalTime, squares);
   }
 }
 
 function moveSnake(squares) {
   if (hit(squares)) {
     // game over
-    clearInterval(interval);
+    clearInterval(gameInterval);
     if (score > highScores[2]) {
       document.getElementById('high-score').style.display = 'block';
     } else {
@@ -220,7 +221,7 @@ function startGame() {
   genApple(squares);
   intervalTime = 200;
   direction = 1;
-  interval = setInterval(moveSnake, 200, squares);
+  gameInterval = setInterval(moveSnake, 200, squares);
 }
 
 function restartGame() {
@@ -237,10 +238,10 @@ function restartGame() {
 }
 
 snekButtonGrid.onclick = () => {
-  // stop button animation, show game board
+  // show game board
   document.getElementById('pic-snake-button').style.display = 'none';
   document.getElementById('snake-game').style.display = 'block';
-  clearInterval(interval);
+  clearInterval(buttonInterval);
 
   for (let i = 0; i < 400; i++) {
     snekGameGrid.append(document.createElement('div'));
@@ -294,7 +295,8 @@ document.getElementById('snake-bg').onclick = () => {
   document.getElementById('pic-snake-button').style.display = 'block';
   document.getElementById('snake-game').style.display = 'none';
   const squares = document.querySelectorAll('.snek-button-board div');
-  interval = setInterval(moveSnakeButton, 200, squares);
+  snekGameGrid.innerHTML = '';
+  buttonInterval = setInterval(moveSnakeButton, 200, squares);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -304,5 +306,5 @@ document.addEventListener('DOMContentLoaded', () => {
   const squares = document.querySelectorAll('.snek-button-board div');
   buttonSnake.forEach((index) => squares[index].classList.add('snake'));
 
-  interval = setInterval(moveSnakeButton, 200, squares);
+  buttonInterval = setInterval(moveSnakeButton, 200, squares);
 });
