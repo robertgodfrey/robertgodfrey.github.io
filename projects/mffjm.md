@@ -5,8 +5,9 @@ image: img/mffjm/mffjm-icon.png
 title: MFFJM
 date: 2020
 published: true
+order: 0
 labels:
-  - Java
+  - Android SDK
 summary: "Android application designed for military free-fall jumpmasters (MFFJM). Includes jump calculations, a Military CYPRES calculator, altimeter calculator, and a copy of MFF sustained airborne training."
 ---
 

@@ -4,6 +4,7 @@ type: project
 image: img/makai/cmdr-logo.png
 title: Makai
 date: 2023
+order: 5
 published: true
 labels:
   - Next.js
@@ -45,5 +46,6 @@ Makai was built with Next.js. The frontend was built with React, Tailwind, and D
 <br>
 <p style="text-align:center;">
   <a href="https://github.com/HACC-2023/makai" target="_blank">GitHub Repository</a>
+  <br/>
   <a href="https://makai-marine.vercel.app/" target="_blank">Live website</a>
 </p>

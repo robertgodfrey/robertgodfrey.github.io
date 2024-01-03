@@ -4,6 +4,7 @@ type: project
 image: img/doelt/doelt-logo.png
 title: Department of Education Legislative Tracker
 date: 2022
+order: 1
 published: true
 labels:
   - Meteor.js

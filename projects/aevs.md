@@ -2,8 +2,9 @@
 layout: project
 type: project
 image: img/aevs/aevs-logo.png
-title: Autonomous Electric Vehicle System
-date: 2023
+title: Warrior Autonomous Electric Vehicle System
+date: 2023 - present
+order: 3
 published: true
 labels:
   - Node.js

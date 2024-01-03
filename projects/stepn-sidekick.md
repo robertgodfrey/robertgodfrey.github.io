@@ -3,11 +3,12 @@ layout: project
 type: project
 image: img/sidekick/sidekick-logo.png
 title: STEPN Sidekick
-date: 2022 - present
+date: 2022 - 2023
+order: 2
 published: true
 labels:
-  - Java
-  - Swift
+  - Android SDK
+  - SwiftUI
 summary: "Companion application for the move-to-earn game STEPN. Developed natively for both Android and iOS."
 ---
 

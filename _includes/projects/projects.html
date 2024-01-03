@@ -1,3 +1,28 @@
+<!-- <div id="experience" class="py-3" style="background-color: #262626; border-top: 2px solid; border-color: #222222;">
+  <div class="container">
+    <div class="row my-2">
+      <div class="col-md-6">
+        <div class="text-start" style="color: white">
+          <b>
+            <svg class="ms-3 mb-4" style="fill: #afb1b3; height: 2.5rem; width: 2.5rem;">
+              <use xlink:href="/img/bootstrap-icons.svg#person-workspace"/>
+            </svg>
+            <span class="display-6" style="color: #cfcfcf; font-weight: 400;">
+              &nbsp;Experience
+            </span>
+          </b>
+        </div>
+      </div>
+    </div>
+
+    <div class="vstack gap-3">
+      Software Developer
+      Deep-Sea Animal Research Center at the University of Hawaii
+    </div>
+
+  </div>
+</div> -->
+
 <div id="projects" class="py-3" style="background-color: #262626; border-top: 2px solid; border-color: #222222;">
   <div class="container">
     <div class="row my-2">
@@ -16,7 +41,7 @@
     </div>
 
     <div class="vstack gap-3">
-      {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
+      {% assign project_pages = site.pages | where: "type", "project" | sort: "order" | reverse %}
       {% for page in project_pages %}
         {% unless page.draft %}
           {% include projects/project-card.html page=page %}

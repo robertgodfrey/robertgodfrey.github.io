@@ -1,5 +1,5 @@
 // mom's spaghetti. ye have been warned
-const bioText = ' I expect to graduate in May 2024 and plan on pursuing a career as a software engineer.';
+const bioText = ' I started coding ';
 const speed = 50;
 let first = true;
 
