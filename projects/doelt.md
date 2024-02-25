@@ -11,7 +11,6 @@ labels:
   - React
   - MongoDB
   - Bootstrap
-  - Hackathon
 summary: "Modern web application designed to help the State of Hawaii’s Department of Education keep track of state legislature more efficiently. Second-place winner of the 2022 Hawaii Annual Code Challenge."
 ---
 <div class="my-3">

@@ -3,12 +3,13 @@ layout: project
 type: project
 image: img/sidekick/sidekick-logo.png
 title: STEPN Sidekick
-date: 2022 - 2023
+date: 2022 - present
 order: 2
 published: true
 labels:
   - Android SDK
   - SwiftUI
+  - Machine Learning
 summary: "Companion application for the move-to-earn game STEPN. Developed natively for both Android and iOS."
 ---
 
@@ -18,7 +19,9 @@ STEPN Sidekick is a mobile application that I started working on in the summer o
 
 This was the largest project I had worked on up until this point, and I learned a lot while making it. One of my main focuses was to create an intuitive user interface and to give the app a polished and professional feeling. To accomplish this, I learned how to implement design features such as button animation, tab views, and custom popup dialogs. I further broadened my knowledge of Android development with the implementation of features such as user location, audio, multithreading, foreground services, API calls, advertisements, and in-app purchases. Then, I learned it all again for iOS. This was the first project that I have published and it was my first experience using Swift & Xcode. Additionally, I translated the entire app into Korean (with some help).
 
-STEPN Sidekick currently has over 15,000 downloads across iOS and Android, and its average rating is 4.9/5.0 on both the Google Play Store and the Apple App Store.
+Recently, I added a machine learning model to the app that predicts the probability of receiving certain in-game items, based on over 6 months of community data. The model is deployed on Vercel and is accessed from the app by interacting with a REST API built with Flask.
+
+STEPN Sidekick currently has over 20,000 downloads across iOS and Android, and its average rating is 4.9/5.0 on both the Google Play Store and the Apple App Store.
 <br><br>
 
 <p style="text-align:center;">

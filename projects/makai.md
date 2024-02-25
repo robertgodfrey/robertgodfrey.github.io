@@ -11,7 +11,6 @@ labels:
   - React
   - MongoDB
   - Tailwind
-  - Hackathon
 summary: "Web application designed to facilitate marine debris reporting, removal, and disposal throughout the Hawaiian Islands. Third-place winner of the 2023 Hawaii Annual Code Challenge."
 ---
 <div class="my-3">
